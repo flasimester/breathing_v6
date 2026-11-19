@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Altitude Breath: 8-Week Breathwork Program</title>
+<meta name="theme-color" content="#000000">
+<meta name="description" content="8-week breathwork program with guided timers for breathing efficiency, CO2 tolerance and composure at altitude.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Altitude Breath: 8-Week Breathwork Program">
+<meta property="og:description" content="Guided timers for CO2 tolerance, breathing efficiency and composure on 4000 m+ summits.">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Altitude Breath: 8-Week Breathwork Program">
+<meta name="twitter:description" content="Guided timers for CO2 tolerance, breathing efficiency and composure on 4000 m+ summits.">
+<meta name="twitter:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/social-preview.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Altitude Breath">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>
+:root{--bg:#000;--surface:#0A0A0A;--line:#232323;--text:#EDEDEA;--muted:#8B8F92;--accent:#B5602E;--warn:#C9483A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+html{height:100%;}
+*{box-sizing:border-box;}
+body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{margin:0 0 .3em;font-weight:600;letter-spacing:-.01em;}
+p{margin:.4em 0;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.hero{padding:18px 20px;border-bottom:1px solid var(--line);}
+.hero-inner,.wrap{max-width:680px;margin:0 auto;}
+.hero-inner{position:relative;}
+.lang{position:absolute;top:0;right:0;display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.lang button{font:inherit;font-size:.72rem;font-weight:600;letter-spacing:.06em;color:var(--muted);background:none;border:0;padding:7px 11px;cursor:pointer;}
+.lang button.on{background:var(--accent);color:#fff;}
+.eyebrow{color:var(--accent);font-size:.78rem;font-weight:600;}
+.hero h1{font-size:1.6rem;margin-top:4px;}
+.hero p{color:var(--muted);font-size:.92rem;}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5;}
+.tabs{max-width:680px;margin:0 auto;display:flex;justify-content:space-between;overflow-x:auto;scrollbar-width:none;}
+.tabs::-webkit-scrollbar{display:none;}
+.tabs button{font:inherit;font-size:.74rem;color:var(--muted);background:none;border:0;border-bottom:2px solid transparent;padding:14px 3px;cursor:pointer;white-space:nowrap;flex:1 0 auto;min-width:38px;}
+.tabs button.active{color:var(--text);border-bottom-color:var(--accent);}
+.wrap{padding:0 20px 60px;}
+section{padding:26px 0;display:none;}
+section.active{display:block;}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.label{color:var(--accent);font-size:.8rem;font-weight:600;}
+.badge{font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:3px 8px;}
+.title{font-size:1.25rem;margin-top:2px;}
+.focus{color:var(--muted);font-size:.93rem;margin-bottom:12px;}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin:8px 0 4px;}
+td{padding:11px 6px;border-bottom:1px solid var(--line);vertical-align:top;}
+td.chk{width:30px;padding-left:0;}
+td.gt{width:1%;padding-right:0;vertical-align:top;padding-top:10px;}
+td .n{font-weight:500;}
+td .f{color:var(--muted);font-size:.8rem;margin-top:2px;}
+td .d{color:var(--muted);font-size:.86rem;margin-top:3px;}
+tr{cursor:pointer;}
+tr:active{background:var(--surface);}
+tr.done .n,tr.done .d{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line);}
+input[type=checkbox]{width:17px;height:17px;accent-color:var(--accent);cursor:pointer;}
+.go{font:inherit;font-size:.78rem;font-weight:500;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:4px;padding:7px 11px;cursor:pointer;white-space:nowrap;}
+.go:active{background:var(--accent);color:#fff;}
+.opt .go{margin-top:10px;display:block;}
+.ib{position:relative;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:600;font-size:.72rem;line-height:1;width:20px;height:20px;padding:0;margin-left:7px;vertical-align:1px;border-radius:50%;border:1px solid var(--muted);color:var(--muted);background:none;cursor:pointer;}
+.ib::after{content:"";position:absolute;inset:-10px;}
+.ib[aria-expanded=true]{color:var(--accent);border-color:var(--accent);}
+.inf{margin-top:10px;padding:10px 12px;background:var(--surface);border-left:2px solid var(--accent);border-radius:0 6px 6px 0;font-size:.84rem;color:var(--muted);animation:op .2s ease;}
+.inf[hidden]{display:none;}
+.inf p{margin:.35em 0;}
+.inf b{color:var(--text);font-weight:600;}
+@keyframes op{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+#s0 .label{text-transform:uppercase;}
+.reset.red{border-color:var(--warn);color:var(--warn);}
+.dt{border:1px solid var(--line);border-radius:6px;margin:10px 0;background:var(--surface);}
+.dt summary{cursor:pointer;padding:13px 14px;font-weight:500;font-size:.92rem;list-style:none;display:flex;align-items:center;gap:8px;}
+.dt summary::-webkit-details-marker{display:none;}
+.dt summary>span:first-child{flex:1;}
+.dt summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1;}
+.dt[open] summary::after{content:"–";}
+.dt .cnt{color:var(--muted);font-weight:400;font-size:.8rem;}
+.dt ul{margin:0;padding:0 16px 14px 32px;}
+.dt li{margin:.55em 0;font-size:.88rem;color:var(--muted);}
+.pack{padding:0 14px 8px;}
+.pk{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-size:.88rem;cursor:pointer;}
+.pk input{margin-top:3px;flex:none;}
+.pri{font:inherit;font-size:.88rem;font-weight:600;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:9px 14px;cursor:pointer;}
+.lk{font:inherit;font-size:.86rem;color:var(--accent);background:none;border:0;text-decoration:underline;cursor:pointer;padding:4px;}
+select{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px;color-scheme:dark;max-width:100%;min-width:0;}
+.ar{padding:12px 0;border-bottom:1px solid var(--line);}
+.ar .note{padding-top:6px;font-size:.82rem;}
+.seg2{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+.seg2 button{flex:1;font:inherit;font-size:.84rem;color:var(--muted);background:none;border:0;padding:9px 6px;cursor:pointer;}
+.seg2 button.on{background:var(--accent);color:#fff;}
+.adj,.nudge{background:var(--surface);}
+.alert{border:1px solid var(--warn);border-radius:6px;padding:14px 16px;margin:14px 0 8px;}
+.alert h3{color:var(--warn);font-size:1rem;margin:0 0 6px;}
+.alert p{margin:.45em 0;font-size:.9rem;}
+.alert .fine{color:var(--muted);font-size:.8rem;}
+.tool{display:flex;gap:10px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line);}
+.tool .tl{flex:1;min-width:0;}
+.tool .n{font-weight:500;font-size:.92rem;}
+.tool .f{color:var(--muted);font-size:.8rem;margin-top:2px;}
+.tool .d{color:var(--muted);font-size:.86rem;margin-top:3px;}
+.tool .go{margin-top:2px;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 8px;}
+.stat{border:1px solid var(--line);border-radius:6px;padding:12px 6px;text-align:center;}
+.stat b{display:block;font-size:1.5rem;font-weight:600;line-height:1.2;}
+.stat span{color:var(--muted);font-size:.72rem;}
+.dots{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px;}
+.dot{width:16px;height:16px;border-radius:4px;border:1px solid var(--line);}
+.dot.on{background:var(--accent);border-color:var(--accent);}
+.dot.t{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--muted);}
+.fine{color:var(--muted);font-size:.8rem;}
+.wr{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:.84rem;}
+.wr .bar{flex:1;margin:0;}
+.wr .wn{color:var(--muted);min-width:46px;text-align:right;}
+.hr{padding:9px 0;border-bottom:1px solid var(--line);}
+.hr .n{font-weight:500;font-size:.88rem;}
+.hr .f{color:var(--muted);font-size:.82rem;margin-top:2px;}
+.tw{overflow-x:auto;}
+.bt{width:100%;border-collapse:collapse;font-size:.84rem;margin:10px 0;}
+.bt tr{cursor:default;}
+.bt th{color:var(--muted);font-weight:500;text-align:center;padding:6px 4px;font-size:.76rem;}
+.bt th:first-child,.bt td:first-child{text-align:left;}
+.bt th small{display:block;font-weight:400;}
+.bt td{padding:9px 4px;text-align:center;min-width:52px;}
+.bt td:first-child{min-width:0;}
+.fr{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+input[type=number],input[type=time]{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:9px 10px;color-scheme:dark;width:110px;max-width:100%;min-width:0;min-height:40px;-webkit-appearance:none;appearance:none;}
+.nt{color:var(--muted);font-size:.78rem;margin:-6px 0 12px;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+@media (prefers-reduced-motion:reduce){.orb,.arc{transition:none!important;}.inf{animation:none;}}
+.card{border:1px solid var(--line);border-radius:6px;padding:16px;margin-top:10px;}
+.dl{display:block;color:var(--muted);font-size:.8rem;margin-bottom:6px;}
+input[type=date]{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px;color-scheme:dark;display:block;width:100%;min-width:0;max-width:100%;min-height:44px;-webkit-appearance:none;appearance:none;text-align:left;}
+input[type=date]::-webkit-date-and-time-value{text-align:left;min-width:0;}
+input[type=date]::-webkit-datetime-edit{padding:0;}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+.btns .reset{margin-top:0;}
+.go.big{font-size:.95rem;font-weight:600;padding:13px 18px;background:var(--accent);color:#fff;border-color:var(--accent);width:100%;}
+.btns .go.big{width:auto;}
+.wk{display:flex;justify-content:space-between;margin:16px 0 6px;}
+.wd{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--muted);}
+.wd.future{opacity:.55;}.wd.rest{border-style:dashed;opacity:.5;}.wd.part{border-color:var(--accent);color:var(--text);}.wd.missed{border-color:var(--muted);color:var(--text);}
+.wd.full{background:var(--accent);border-color:var(--accent);color:#fff;}
+.wd.today{box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px var(--text);}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:12px 0 6px;overflow:hidden;}
+.bar i{display:block;height:100%;background:var(--accent);}
+.pg{color:var(--muted);font-size:.84rem;}
+.nx{margin:16px 0 4px;}
+.sub{font-size:.95rem;margin:22px 0 4px;}
+.srow{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer;}
+.srow .sm{flex:1;min-width:0;}
+.srow .n{font-weight:500;font-size:.9rem;}
+.srow .f{color:var(--muted);font-size:.8rem;margin-top:2px;}
+.srow.done .n{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line);}
+.srow input{margin-top:3px;}
+.note{color:var(--muted);font-size:.9rem;padding:12px 0 0;margin:0;}
+.ok{border-left:2px solid var(--accent);padding:8px 0 8px 14px;margin:14px 0;font-size:.9rem;}
+.why{border-left:2px solid var(--accent);padding:8px 0 8px 14px;margin-top:14px;font-size:.88rem;color:var(--muted);}
+.why b{color:var(--text);}
+.opt{border:1px dashed var(--line);border-radius:6px;padding:12px 14px;margin-top:14px;font-size:.88rem;color:var(--muted);}
+.opt b{color:var(--text);}
+.notes{border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin-top:8px;}
+.notes h3{font-size:1rem;color:var(--accent);}
+.notes.warn h3{color:var(--warn);}
+.notes ul{margin:.4em 0 1em;padding-left:1.1em;}
+.notes li{margin:.45em 0;font-size:.92rem;}
+.reset{font:inherit;font-size:.83rem;color:var(--muted);background:none;cursor:pointer;border:1px solid var(--line);border-radius:4px;padding:8px 14px;margin-top:10px;}
+footer{color:var(--muted);font-size:.78rem;text-align:center;padding:24px 20px 10px;}
+
+/* ---- guided timer overlay ---- */
+.ov{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;align-items:flex-start;justify-content:center;overflow:auto;
+ padding:max(20px,env(safe-area-inset-top,0px)) 20px max(20px,env(safe-area-inset-bottom,0px));}
+.ov[hidden]{display:none;}
+.ovb{width:100%;max-width:420px;text-align:center;margin:auto;}
+.ot{font-size:1.15rem;font-weight:600;padding:0 40px;}
+.od{color:var(--muted);font-size:.86rem;margin:6px 0 14px;}
+.xb,.sb{position:fixed;z-index:2;background:var(--bg);top:max(12px,env(safe-area-inset-top,0px));font:inherit;background:none;border:1px solid var(--line);color:var(--muted);border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1rem;}
+.xb{right:14px;}.sb{left:14px;font-size:.9rem;}
+.sb.off{opacity:.45;text-decoration:line-through;}
+.opts{display:flex;gap:8px;justify-content:center;margin-bottom:6px;min-height:0;}
+.opts button{font:inherit;font-size:.85rem;color:var(--muted);background:none;border:1px solid var(--line);border-radius:4px;padding:7px 14px;cursor:pointer;}
+.opts button.on{color:var(--text);border-color:var(--accent);}
+.ring{position:relative;width:min(78vw,300px,40dvh);aspect-ratio:1;margin:10px auto;}
+.ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);}
+.ring .bg{stroke:var(--line);}
+.ring .arc{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .25s linear;}
+.orb{position:absolute;inset:9%;border-radius:50%;background:rgba(181,96,46,.2);border:1px solid var(--accent);transform:scale(.55);}
+.noorb .orb{display:none;}
+.ov[data-k=out] .orb{background:rgba(181,96,46,.1);}
+.ov[data-k=hold] .orb{background:rgba(181,96,46,.38);}
+.ov[data-k=rest] .orb{background:rgba(139,143,146,.14);border-color:var(--muted);}
+.ov[data-k=rest] .arc{stroke:var(--muted);}
+.rt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.rp{font-size:clamp(2.4rem,13vw,3.5rem);font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1;}
+.rn{color:var(--muted);font-size:.92rem;margin-top:2px;padding:0 14%;}
+.rs{color:var(--muted);font-size:.88rem;min-height:2.8em;margin:8px 0 14px;}
+.ctl{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.ctl button{font:inherit;font-size:.95rem;border-radius:6px;padding:13px 22px;cursor:pointer;min-width:130px;border:1px solid var(--line);background:none;color:var(--text);}
+.ctl .stop{border-color:var(--warn);color:var(--warn);}
+.ctl .pri{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;}
+.ctl button[hidden]{display:none;}
+@media (max-height:520px) and (orientation:landscape){
+ .ov{padding-top:max(10px,env(safe-area-inset-top,0px));padding-bottom:max(10px,env(safe-area-inset-bottom,0px));}
+ .ovb{display:grid;grid-template-columns:auto 1fr;column-gap:26px;align-items:center;text-align:left;max-width:760px;padding:0 50px;}
+ .ring{grid-column:1;grid-row:1 / span 6;width:min(62vh,250px);margin:0;}
+ .ot,.od,.opts,.rs,.nt,.ctl{grid-column:2;}
+ .ot{padding:0;font-size:1.05rem;}
+ .od{margin:4px 0 8px;font-size:.8rem;}
+ .opts{justify-content:flex-start;}
+ .rs{margin:6px 0 8px;min-height:0;}
+ .ctl{justify-content:flex-start;}
+ .ctl button{padding:11px 18px;min-width:110px;}
+}
+@media (max-height:340px) and (orientation:landscape){
+ .ovb{column-gap:20px;}
+ .ot{font-size:.95rem;}
+ .od{font-size:.74rem;line-height:1.35;margin:2px 0 4px;}
+ .opts{margin-bottom:2px;}
+ .opts button{padding:5px 10px;font-size:.8rem;}
+ .rs{margin:2px 0 6px;font-size:.8rem;}
+ .nt{display:none;}
+ .ctl{gap:8px;}
+ .ctl button{padding:9px 14px;min-width:100px;font-size:.88rem;}
+}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner">
+<div class="eyebrow">ALTITUDE BREATH</div>
+<div class="lang" role="group" aria-label="Language"><button type="button" data-l="en">EN</button><button type="button" data-l="hu">HU</button></div>
+<h1 id="h1">8-Week Breathwork Program</h1>
+<p id="hp">Breathing efficiency, CO₂ tolerance and composure under load. 15-20 min/day.</p>
+</div></header>
+<nav><div class="tabs" id="tabs" role="tablist"></div></nav>
+<main class="wrap" id="main"></main>
+<footer id="ft">Breathwork supports acclimatization; it does not replace it. Climb high, sleep low.</footer>
+
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Exercise timer">
+ <button class="sb" id="snd" aria-label="Toggle sound" title="Sound">♪</button>
+ <button class="xb" id="ovx" aria-label="Close timer">✕</button>
+ <div class="ovb">
+  <div class="ot" id="ot"></div>
+  <div class="od" id="od"></div>
+  <div class="opts" id="oopts"></div>
+  <div class="ring" id="ring">
+   <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="bg" cx="50" cy="50" r="46" fill="none" stroke-width="1.6"/><circle class="arc" id="arc" cx="50" cy="50" r="46" fill="none" stroke-width="1.6"/></svg>
+   <div class="orb" id="orb"></div>
+   <div class="rt"><div class="rp" id="rp"></div><div class="rn" id="rn"></div></div>
+  </div>
+  <div class="rs" id="rs"></div><div class="nt" id="nt"></div><div class="sr" id="sr" aria-live="assertive"></div>
+  <div class="ctl"><button class="pri" id="tb1"></button><button id="tb2"></button></div>
+ </div>
+</div>
+
+<script>
+var PH=[
+{id:"p1",tab:"Wk 1-2",label:"WEEKS 1-2",title:"Foundation",focus:"Build the base pattern before adding stress.",
+ items:[
+ ["Resonance breathing","Daily · 10 min","Seated. Nose in 5 s, out 5 s (about 6 breaths/min). Breathe into the belly.","res"],
+ ["Nasal-only easy movement","Daily · 20-30 min","Walk or easy Zone 2 ride. Mouth closed the whole time.","nasal"],
+ ["Diaphragm check","3x/week · 5 min","Lying down, one hand on belly. The belly should rise before the chest.","diaph"]],
+ why:"Slow nasal breathing trains the diaphragm and calms your baseline. Everything later builds on it."},
+{id:"p2",tab:"Wk 3-5",label:"WEEKS 3-5",title:"Capacity",focus:"Strengthen the breathing muscles and raise CO₂ tolerance.",
+ items:[
+ ["Inspiratory muscle training","5x/week · 30 breaths","Resistance trainer at about 50% of max, or a level where the last 5 breaths feel hard. Do it after core sessions.","imt"],
+ ["CO₂ tolerance table","2x/week · lying or floor-seated","8 rounds: comfortable hold after a normal exhale. Rest 2:00, dropping 15 s each round to 0:15. Stop at the first strong urge to breathe. Lie down or sit on the floor, away from hard objects.","co2"],
+ ["Pursed-lip exhale drills","3x/week · 5 min","On stairs or hill repeats: inhale through the nose, exhale forcefully through pursed lips.","pursed"]],
+ opt:["Optional: Wim Hof method, 1x/week"," in place of one CO₂ table. Lying down only: 3 rounds of 30 fast deep breaths, relaxed hold after an exhale, then one deep breath held 15 s. Never in water, standing, or while driving."],
+ why:"Stronger inspiratory muscles delay breathing fatigue. CO₂ tolerance keeps you calm when air gets thin."},
+{id:"p3",tab:"Wk 6-8",label:"WEEKS 6-8",title:"Integration",focus:"Bring the breathing into loaded movement.",
+ items:[
+ ["Loaded hike, step-breath rhythm","2x/week","With a pack. 2 steps in, 2 steps out, moving to 3:3 as it steepens. Keep a pace where this stays possible.","hike"],
+ ["Pressure breathing on steep sections","During hikes","Inhale through the nose, exhale firmly through pursed lips.","","press"],
+ ["Nasal-only Zone 2","1x/week · 45+ min","Builds breathing economy.","z2"],
+ ["Inspiratory muscle training","3x/week · 30 breaths","Maintenance dose.","imt"],
+ ["CO₂ tolerance table","1x/week · lying or floor-seated","Same format as weeks 3-5.","co2"]],
+ why:"Matching breath to step rhythm keeps effort steady and stops you from gasping and burning out on long climbs."}
+];
+
+/* ---- timer definitions. A phase: n name, s seconds (null = open-ended, count-up),
+   k kind (in/out/rest/hold/go), o orb scale, c big number override, q silent, hold = record hold time ---- */
+function LVF(){var l=(typeof plan!=="undefined"&&plan&&plan.level)||0;return l<0?.75:l>0?1.25:1;}
+function r5(x){return Math.round(x/5)*5;}
+function pacer(a,b,n,q){var o=[],i,t;for(i=1;i<=n;i++){t=tf("Breath {0} / {1}",i,n);o.push({n:tx("Inhale"),s:a,k:"in",sub:t,q:q});o.push({n:tx("Exhale"),s:b,k:"out",sub:t,q:q});}return o;}
+function cd(sec,name,sub){return [{n:name,s:sec,k:"go",sub:sub||""}];}
+var TM={
+ res:{pace:1,make:function(){return pacer(5,5,Math.round(60*LVF()));}},
+ nasal:{opts:[20,25,30],make:function(m){return cd(m*60,tx("Easy & nasal"),tx("Mouth closed"));}},
+ diaph:{make:function(){return cd(Math.round(5*LVF())*60,tx("Belly rises first"),tx("Lying down, hand on belly"));}},
+ imt:{pace:1,make:function(){return pacer(2,3,r5(30*LVF()),1);}},
+ co2:{orb:1,hint:"8 rounds. Tap when you feel the first strong urge to breathe.",make:function(){var o=[],i,s;
+  var n=Math.round(8*LVF());for(i=0;i<n;i++){s=tf("Round {0} / {1}",i+1,n);
+   o.push({n:tx("Rest"),s:Math.max(15,120-15*i),k:"rest",o:.8,sub:s+" · "+tx("breathe normally")});
+   o.push({n:tx("Hold"),s:null,k:"hold",o:.55,hold:1,btn:tx("First strong urge"),sub:s+" · "+tx("after a normal exhale")});}
+  return o;}},
+ pursed:{make:function(){return cd(Math.round(5*LVF())*60,tx("Nose in, pursed lips out"),tx("Exhale forcefully"));}},
+ hike:{hint:"Stopwatch. Tap Finish when you're done.",make:function(){return [{n:tx("Moving"),s:null,k:"go",sub:tx("2 steps in, 2 steps out"),btn:tx("Finish")}];}},
+ z2:{opts:[45,60,90],make:function(m){return cd(m*60,tx("Easy & nasal"),tx("Mouth closed"));}},
+ sm_calm:{pace:1,scale:0,warn:" Symptoms mean descend: never use breathwork to push through them.",hint:"3 minutes. A longer exhale than inhale settles your nerves.",make:function(){return pacer(4,6,18);}},
+ sm_steps:{pace:1,loop:1,scale:0,warn:" Symptoms mean descend: never use breathwork to push through them.",opts:[2,3,4],optDef:3,optFmt:function(m){return m+":"+m;},hint:"Runs until you end it. Match the rhythm to your steps and change it as the slope changes.",
+  make:function(m){var t=tf("{0} steps in, {1} steps out",m,m);return [{n:tx("Inhale"),s:m,k:"in",sub:t},{n:tx("Exhale"),s:m,k:"out",sub:t}];}},
+ sm_pursed:{pace:1,loop:1,scale:0,warn:" Symptoms mean descend: never use breathwork to push through them.",hint:"Runs until you end it. In through the nose, out through pursed lips, twice as long.",
+  make:function(){return [{n:tx("Inhale"),s:2,k:"in",sub:tx("Nose in")},{n:tx("Exhale"),s:4,k:"out",sub:tx("Pursed lips out")}];}},
+ sm_reset:{pace:1,scale:0,warn:" Symptoms mean descend: never use breathwork to push through them.",hint:"2 minutes. Stop moving if it's safe, drop your shoulders, then breathe.",make:function(){return pacer(3,5,15);}},
+ sm_descent:{pace:1,loop:1,scale:0,warn:" Symptoms mean descend: never use breathwork to push through them.",hint:"Runs until you end it. Keep breathing steady while you focus on your footing.",
+  make:function(){return [{n:tx("Inhale"),s:3,k:"in",sub:tx("Relaxed shoulders")},{n:tx("Exhale"),s:4,k:"out",sub:tx("Don't hold your breath on tricky steps")}];}},
+ bl_rate:{scale:0,hint:"60 seconds. Sit quietly, breathe normally and count each full breath (in and out).",make:function(){return cd(60,tx("Count your breaths"),tx("Normal, quiet breathing"));}},
+ bl_walk:{scale:0,hint:"10 minutes. Walk at an easy pace with your mouth closed, then rate how comfortable it felt.",make:function(){return cd(600,tx("Nasal-only walk"),tx("Mouth closed"));}},
+ bl_hold:{orb:1,scale:0,warn:" Lying down only. Never in water, standing or driving.",hint:"One relaxed hold after a normal exhale. Tap at the first strong urge.",make:function(){return [{n:tx("Hold"),s:null,k:"hold",o:.55,hold:1,btn:tx("First strong urge"),sub:tx("after a normal exhale")}];}},
+ whm:{orb:1,hint:"3 rounds. Tap at the first urge to breathe.",warn:" Lying down only. Never in water, standing or driving.",make:function(){var o=[],r,i,s;
+  for(r=1;r<=3;r++){s=tf("Round {0} / {1}",r,3);
+   for(i=1;i<=30;i++){o.push({n:tx("Breathe in"),s:1.5,k:"in",q:1,c:i,sub:s});o.push({n:tx("Let go"),s:1,k:"out",q:1,c:i,sub:s});}
+   o.push({n:tx("Exhale & hold"),s:null,k:"hold",o:.55,hold:1,btn:tx("I need to breathe"),sub:s+" · "+tx("relaxed, after an exhale")});
+   o.push({n:tx("Deep breath in & hold"),s:15,k:"hold",o:1,sub:s+" · "+tx("hold 15 s")});}
+  return o;}}
+};
+
+/* ---- language: EN (default) / HU ---- */
+var LANG="en";
+try{LANG=localStorage.getItem("ab_lang")||(/^hu/i.test(navigator.language||"")?"hu":"en");}catch(e){}
+var UI={
+ "8-Week Breathwork Program":"8 hetes légzéstréning-program",
+ "Breathing efficiency, CO₂ tolerance and composure under load. 15-20 min/day.":"Légzéshatékonyság, CO₂-tűrés és nyugalom terhelés alatt. Napi 15–20 perc.",
+ "Breathwork supports acclimatization; it does not replace it. Climb high, sleep low.":"A légzésgyakorlat segíti az akklimatizációt, de nem helyettesíti azt. Mássz magasra, aludj alacsonyan.",
+ "Exercise timer":"Gyakorlat időzítő","Toggle sound":"Hang be/ki","Close timer":"Időzítő bezárása",
+ "About this exercise":"Információ a gyakorlatról","Works:":"Mit edz:","Why do it:":"Miért érdemes:","Note:":"Megjegyzés:",
+ "Start timer:":"Időzítő indítása:","▶ Start":"▶ Indítás","▶ Start guided session":"▶ Irányított gyakorlat indítása","Why:":"Miért:",
+ "Safety":"Biztonság","READ FIRST":"ELŐSZÖR OLVASD EL","Never":"Soha ne","Stop if":"Hagyd abba, ha","On the mountain":"A hegyen","Reset progress":"Haladás törlése",
+ "Hold your breath in water, in a shower or bath, while driving, or standing.":"tartsd vissza a lélegzeted vízben, zuhany vagy fürdő alatt, vezetés közben vagy állva.",
+ "Hyperventilate on purpose outside the optional lying-down Wim Hof session.":"hiperventillálj szándékosan az opcionális, fekvő Wim Hof-gyakorlaton kívül.",
+ "Use breathwork during the climb to push past altitude symptoms.":"használd a légzésgyakorlatot mászás közben arra, hogy átlépj a magaslati tüneteken.",
+ "You feel dizzy, faint or severely tingly.":"szédülsz, ájulásközeli állapotban vagy, vagy erősen bizsereg a tested.",
+ "You have heart or lung issues. Check with a doctor before IMT or breath-holds.":"szív- vagy tüdőproblémád van. IMT vagy légzésvisszatartás előtt kérdezd meg az orvosodat.",
+ "Use slow, rhythmic nasal and pursed-lip breathing. Skip breath-holds and fast-breathing drills.":"Lassú, ritmusos orr- és csücsörített ajkú légzést használj. Hagyd ki a légzésvisszatartást és a gyors légzési gyakorlatokat.",
+ "Breathwork does not prevent altitude sickness. Ascend gradually and descend if symptoms worsen.":"A légzésgyakorlat nem előzi meg a magaslati betegséget. Fokozatosan emelkedj, és szállj le, ha a tünetek romlanak.",
+ "{0} / {1} done":"{0} / {1} kész",
+ "Breath {0} / {1}":"{0}. légvétel / {1}","Round {0} / {1}":"{0}. kör / {1}",
+ "Inhale":"Belégzés","Exhale":"Kilégzés","Easy & nasal":"Könnyű, orrlégzéssel","Mouth closed":"Zárt száj",
+ "Belly rises first":"Először a has emelkedik","Lying down, hand on belly":"Fekve, kéz a hason",
+ "Rest":"Pihenő","breathe normally":"lélegezz normálisan","Hold":"Visszatartás","First strong urge":"Első erős inger","after a normal exhale":"normál kilégzés után",
+ "Nose in, pursed lips out":"Orron be, csücsörített ajkon ki","Exhale forcefully":"Kilégzés erőteljesen",
+ "Moving":"Mozgás","2 steps in, 2 steps out":"2 lépés be, 2 lépés ki","Finish":"Kész",
+ "Breathe in":"Lélegezz be","Let go":"Engedd el","Exhale & hold":"Kilégzés és tartás","I need to breathe":"Levegőt kell vennem",
+ "relaxed, after an exhale":"nyugodt tartás kilégzés után","Deep breath in & hold":"Mély belégzés és tartás","hold 15 s":"tartsd 15 mp-ig",
+ "8 rounds. Tap when you feel the first strong urge to breathe.":"8 kör. Koppints, amikor az első erős légvételi ingert érzed.",
+ "Stopwatch. Tap Finish when you're done.":"Stopper. Koppints a Kész gombra, ha végeztél.",
+ "3 rounds. Tap at the first urge to breathe.":"3 kör. Koppints az első légvételi ingernél.",
+ " Lying down only. Never in water, standing or driving.":" Csak fekve. Soha ne vízben, állva vagy vezetés közben.",
+ "Wim Hof breathing":"Wim Hof-légzés",
+ "3 rounds: 30 fast deep breaths, relaxed hold after an exhale, then one deep breath held 15 s.":"3 kör: 30 gyors mély légvétel, nyugodt visszatartás kilégzés után, majd egy mély belégzés 15 mp-es tartással.",
+ "{0} min":"{0} perc","Ready":"Indulhat","total":"összesen",
+ "About {0} min. A 3-second lead-in starts first.":"Kb. {0} perc. Először 3 másodperces felkészülés következik.",
+ "Start":"Indítás","Done":"Kész","Holds:":"Visszatartások:","Marked as done.":"Késznek jelölve.","Nice work.":"Szép munka.",
+ "End session":"Gyakorlat befejezése","Mark as done:":"Késznek jelölés:","Close":"Bezárás",
+ "Today":"Ma","Start your program":"Indítsd el a programot",
+ "Pick the day you begin week 1. Today's sessions and your weekly progress will follow from it.":"Válaszd ki, melyik napon kezded az 1. hetet. Ebből adódik a mai gyakorlatok listája és a heti haladásod.",
+ "Start date":"Kezdő dátum","Start program":"Program indítása","Cancel":"Mégse","Almost time":"Mindjárt kezdődik",
+ "Program starts: tomorrow ({0})":"A program kezdete: holnap ({0})","Program starts: {0} (in {1} days)":"A program kezdete: {0} ({1} nap múlva)",
+ "Start today instead":"Inkább kezdjem ma","Change start date":"Kezdő dátum módosítása","Program complete":"A program kész",
+ "You've reached the end of the 8 weeks. Repeat any phase from its tab, or start again whenever you like.":"Elérted a 8 hét végét. Bármelyik szakaszt megismételheted a saját fülén, vagy újrakezdheted, amikor szeretnéd.",
+ "Start again today":"Újrakezdés ma","Week {0} of 8 · Day {1}":"{0}. hét / 8 · {1}. nap","{0} / {1} sessions done this week":"{0} / {1} gyakorlat kész a héten",
+ "Today's sessions":"Mai gyakorlatok","Rest day. No breathwork scheduled. Easy walking is fine.":"Pihenőnap. Ma nincs betervezett légzésgyakorlat. Egy könnyű séta rendben van.",
+ "Start next: {0}":"Következő indítása: {0}","All done for today. Nice work.":"Mára végeztél. Szép munka.","Tomorrow: {0}":"Holnap: {0}","Tomorrow: rest day":"Holnap: pihenőnap",
+ "Catch up if you like":"Pótolhatod, ha szeretnéd","Earlier this week, still open. No pressure.":"A hét korábbi, még nyitott gyakorlatai. Nincs kényszer.",
+ "Start this week over from today":"A hét újrakezdése mától","Day {0}":"{0}. nap",
+ "Week {0}":"{0}. hét","Go":"Mehet","Lighter":"Könnyebb","Standard":"Normál","Extended":"Hosszabb","Intensity":"Intenzitás","Intensity: {0}":"Intenzitás: {0}",
+ "Adjust plan":"Terv módosítása","Adjust your plan":"A terv módosítása","Continue as planned":"Folytatás a terv szerint","Continue from week {0}":"Folytatás: {0}. hét",
+ "Missed a few sessions? That's normal.":"Kihagytál pár gyakorlatot? Ez teljesen normális.","Nothing is lost. Pick what suits you, or just keep going.":"Semmi sem veszett el. Válaszd, ami neked megfelel, vagy haladj tovább.",
+ "Keep the calendar as it is. Missed sessions stay available as optional catch-up.":"A naptár marad, ahogy van. A kihagyott gyakorlatok opcionális pótlásként elérhetők maradnak.",
+ "Repeat this week":"A hét megismétlése","Start week {0} over from today.":"Újrakezdés mától: {0}. hét.","Start from week":"Kezdés innen:","That week begins today. Your history is kept.":"A kiválasztott hét ma kezdődik. Az előzményeid megmaradnak.",
+ "Shift the schedule later":"Ütemezés későbbre tolása","1 day":"1 nap","3 days":"3 nap","1 week":"1 hét","Everything moves later. Handy after a break, illness or a busy stretch.":"Minden későbbre kerül. Hasznos szünet, betegség vagy zsúfolt időszak után.",
+ "Scales timed sessions, breath counts and CO₂ rounds by about 25% down or up. Listen to your body.":"A mért idejű gyakorlatokat, a légvételek számát és a CO₂-köröket kb. 25%-kal csökkenti vagy növeli. Hallgass a testedre.",
+ "Plan adjusted.":"Terv módosítva.","Undo":"Visszavonás",
+ "Summit":"Csúcs","SUMMIT DAY":"CSÚCSNAP","Summit-day toolkit":"Csúcsnapi eszköztár",
+ "Quick tools for the mountain. Only slow, rhythmic breathing: no breath-holds, no fast breathing.":"Gyors eszközök a hegyre. Csak lassú, ritmusos légzés: nincs légzésvisszatartás, nincs gyors légzés.",
+ "Symptoms mean descend":"Tünetek esetén szállj le",
+ "Headache with nausea, dizziness, unusual tiredness or poor sleep can be early altitude sickness. Don't go higher until it clears, and if it gets worse, descend.":"A fejfájás hányingerrel, szédüléssel, szokatlan fáradtsággal vagy rossz alvással a magassági betegség korai jele lehet. Ne menj feljebb, amíg el nem múlik, és ha romlik, szállj le.",
+ "Descend immediately and get help for confusion, loss of balance or coordination, breathlessness at rest, a wet cough or chest tightness.":"Azonnal szállj le és kérj segítséget zavartság, egyensúly- vagy koordinációvesztés, nyugalmi légszomj, nedves köhögés vagy mellkasi szorítás esetén.",
+ "Breathwork never treats altitude sickness. This is a general reminder, not medical advice.":"A légzésgyakorlat nem kezeli a magassági betegséget. Ez általános emlékeztető, nem orvosi tanács.",
+ " Symptoms mean descend: never use breathwork to push through them.":" Tünetek esetén szállj le: soha ne használd a légzésgyakorlatot arra, hogy átlépj rajtuk.",
+ "3 minutes. A longer exhale than inhale settles your nerves.":"3 perc. A belégzésnél hosszabb kilégzés megnyugtat.",
+ "Runs until you end it. Match the rhythm to your steps and change it as the slope changes.":"Addig fut, amíg le nem állítod. Igazítsd a ritmust a lépéseidhez, és változtasd a lejtéssel.",
+ "Runs until you end it. In through the nose, out through pursed lips, twice as long.":"Addig fut, amíg le nem állítod. Be orron át, ki csücsörített ajkakon át, kétszer olyan hosszan.",
+ "2 minutes. Stop moving if it's safe, drop your shoulders, then breathe.":"2 perc. Ha biztonságos, állj meg, engedd le a válladat, aztán lélegezz.",
+ "Runs until you end it. Keep breathing steady while you focus on your footing.":"Addig fut, amíg le nem állítod. Lélegezz egyenletesen, miközben a lábad elhelyezésére figyelsz.",
+ "{0} steps in, {1} steps out":"{0} lépés be, {1} lépés ki","Nose in":"Orron be","Pursed lips out":"Csücsörített ajkon ki","Relaxed shoulders":"Laza váll","Don't hold your breath on tricky steps":"Ne tartsd vissza a lélegzeted nehéz lépéseknél",
+ "Progress":"Haladás","PROGRESS":"HALADÁS","Personal practice history":"Személyes gyakorlási napló",
+ "A calm record, not a scoreboard. Nothing here needs to go up.":"Nyugodt napló, nem eredménytábla. Itt semminek nem kell folyamatosan nőnie.",
+ "Sessions logged":"Rögzített gyakorlat","Days practised":"Gyakorlónap","Current run (days)":"Jelenlegi sorozat (nap)",
+ "Practised on {0} of the last 14 days.":"Az elmúlt 14 napból {0} napon gyakoroltál.","Longest run: {0} days":"Leghosszabb sorozat: {0} nap",
+ "Rest days are part of the plan. A run is only a record, not a target.":"A pihenőnapok a terv részei. A sorozat csak egy feljegyzés, nem cél.",
+ "Program weeks":"A program hetei","Recent breath holds":"Legutóbbi légzésvisszatartások","No holds recorded yet.":"Még nincs rögzített visszatartás.","Average {0}":"Átlag: {0}",
+ "These numbers are only a personal log. A longer hold is not the goal.":"Ezek a számok csak személyes feljegyzések. A hosszabb visszatartás nem cél.",
+ "Baseline & retest":"Kiinduló és ismételt mérés",
+ "Optional. Measure a few simple things before week 1 and again after week 8. Single readings vary day to day, so read them as a rough trend.":"Opcionális. Mérj meg néhány egyszerű dolgot az 1. hét előtt és a 8. hét után. Az egyes mérések napról napra ingadoznak, ezért csak durva trendként értelmezd.",
+ "Baseline":"Kiinduló","Retest":"Ismétlés","Change":"Változás",
+ "Resting breathing rate (breaths/min)":"Nyugalmi légzésszám (légvétel/perc)","Nasal-only walk comfort (1–5)":"Orrlégzéses séta kényelme (1–5)",
+ "Breathlessness at a repeatable pace (0–10)":"Légszomj azonos tempónál (0–10)","Relaxed hold (seconds)":"Nyugodt visszatartás (másodperc)",
+ "Record baseline":"Kiinduló mérés rögzítése","Record retest":"Ismételt mérés rögzítése","Save":"Mentés","Fill in at least one value.":"Tölts ki legalább egy értéket.",
+ "▶ 60 s timer":"▶ 60 mp időzítő","▶ 10 min timer":"▶ 10 perces időzítő","▶ Hold timer":"▶ Visszatartás időzítő",
+ "Sit quietly and count one minute of breaths.":"Ülj nyugodtan, és számold meg egy perc légvételeit.",
+ "Easy 10-minute walk, mouth closed. 1 = hard, 5 = easy.":"Könnyű 10 perces séta zárt szájjal. 1 = nehéz, 5 = könnyű.",
+ "Same stairs or hill at the same pace each time. 0 = none, 10 = maximal.":"Ugyanaz a lépcső vagy domb, mindig ugyanazzal a tempóval. 0 = semmi, 10 = maximális.",
+ "Lying down, one relaxed hold after a normal exhale. Stop at the first strong urge.":"Fekve, egy nyugodt visszatartás normál kilégzés után. Állj meg az első erős ingernél.",
+ "Resting breathing rate":"Nyugalmi légzésszám","Nasal-only walk":"Orrlégzéses séta","Relaxed hold":"Nyugodt visszatartás",
+ "Count your breaths":"Számold a légvételeket","Normal, quiet breathing":"Normál, csendes légzés",
+ "60 seconds. Sit quietly, breathe normally and count each full breath (in and out).":"60 másodperc. Ülj nyugodtan, lélegezz normálisan, és számold meg minden teljes légvételt (be és ki).",
+ "10 minutes. Walk at an easy pace with your mouth closed, then rate how comfortable it felt.":"10 perc. Sétálj könnyű tempóban, zárt szájjal, majd értékeld, mennyire volt kényelmes.",
+ "One relaxed hold after a normal exhale. Tap at the first strong urge.":"Egy nyugodt visszatartás normál kilégzés után. Koppints az első erős ingernél.",
+ "Optional: take a baseline before you start. About 5 minutes.":"Opcionális: mérd meg a kiinduló értékeidet indulás előtt. Kb. 5 perc.",
+ "Optional: retest to see your rough trend. About 5 minutes.":"Opcionális: ismételd meg a mérést, hogy lásd a durva trendet. Kb. 5 perc.",
+ "Open baseline":"Kiinduló mérés megnyitása","Open retest":"Ismétlés megnyitása",
+ "Your data":"Az adataid","Everything is stored only on this device. No account, no tracking.":"Minden adat csak ezen az eszközön tárolódik. Nincs fiók, nincs követés.",
+ "Export backup":"Biztonsági mentés exportálása","Import backup":"Biztonsági mentés importálása","Backup saved.":"A mentés elkészült.","Backup imported.":"A mentés betöltve.",
+ "That file isn't a valid backup.":"Ez a fájl nem érvényes biztonsági mentés.","Replace the data on this device with this backup?":"Lecseréled az eszközön lévő adatokat erre a mentésre?",
+ "Calendar reminders":"Naptári emlékeztetők","Add your schedule to any calendar app. Re-export if you change your plan.":"Add hozzá az ütemtervedet bármelyik naptárappba. Ha módosítod a tervet, exportáld újra.",
+ "Reminder time":"Emlékeztető időpontja","Download calendar file (.ics)":"Naptárfájl letöltése (.ics)","Set a start date on the Today tab first.":"Előbb állítsd be a kezdő dátumot a Ma fülön.","Calendar file ready.":"A naptárfájl kész.",
+ "Tip: you can lock your phone. The sound cues keep playing on most phones.":"Tipp: lezárhatod a telefont. A hangjelzések a legtöbb telefonon tovább szólnak.",
+ "Before you go":"Indulás előtt","General guidance, not medical advice. Check your plan with a doctor and your guide.":"Általános útmutató, nem orvosi tanács. Egyeztesd a terved orvossal és a vezetőddel.",
+ "Pre-trip checklist":"Indulás előtti ellenőrzőlista","{0} / {1} ready":"{0} / {1} kész","How to set it:":"Hogyan állítsd be:",
+ "Based on CDC Yellow Book and Wilderness Medical Society guidance. Check the latest advice for your trip.":"A CDC Yellow Book és a Wilderness Medical Society ajánlásai alapján. Nézd meg a legfrissebb tanácsokat a saját utadra.",
+ "Reset all progress? This clears your ticks and history but keeps your start date.":"Törlöd az összes haladást? A pipák és az előzmények törlődnek, a kezdő dátum megmarad.","Resume":"Folytatás","Stop":"Leállítás","Next":"Tovább","Pause":"Szünet","Skip":"Átugrás","Get ready":"Készülj","{0} left":"{0} hátra"
+};
+function tx(s){return LANG==="hu"&&UI[s]!=null?UI[s]:s;}
+function tf(s){var r=tx(s),i;for(i=1;i<arguments.length;i++)r=r.replace("{"+(i-1)+"}",arguments[i]);return r;}
+var HUPH={
+ p1:{tab:"1-2. hét",label:"1-2. HÉT",title:"Alapozás",focus:"Építsd fel az alapmintát, mielőtt terhelést adnál hozzá.",
+  items:[
+  ["Rezonancialégzés","Naponta · 10 perc","Ülve. 5 mp belégzés, 5 mp kilégzés orron át (kb. 6 légvétel/perc). Lélegezz a hasadba."],
+  ["Könnyű mozgás csak orrlégzéssel","Naponta · 20-30 perc","Séta vagy könnyű 2. zónás kerékpározás. A száj végig zárva."],
+  ["Rekeszizom-ellenőrzés","Heti 3x · 5 perc","Fekve, egyik kezed a hasadon. A hasnak előbb kell emelkednie, mint a mellkasnak."]],
+  why:"A lassú orrlégzés edzi a rekeszizmot és nyugtatja az alapállapotodat. Minden későbbi erre épül."},
+ p2:{tab:"3-5. hét",label:"3-5. HÉT",title:"Kapacitás",focus:"Erősítsd a légzőizmokat és növeld a CO₂-tűrést.",
+  items:[
+  ["Belégző izom edzés (IMT)","Heti 5x · 30 légvétel","Légzőizom-erősítő eszköz a maximum kb. 50%-án, vagy olyan szinten, ahol az utolsó 5 légvétel nehéz. Core-edzések után végezd."],
+  ["CO₂-tűrési táblázat","Heti 2x · fekve vagy a földön ülve","8 kör: kényelmes visszatartás normál kilégzés után. Pihenő 2:00, körönként 15 mp-cel csökkentve 0:15-ig. Állj meg az első erős légvételi ingernél. Feküdj le, vagy ülj a földre, kemény tárgyaktól távol."],
+  ["Csücsörített ajkú kilégzési gyakorlatok","Heti 3x · 5 perc","Lépcsőn vagy dombismétléseknél: belégzés orron át, erőteljes kilégzés csücsörített ajkakon át."]],
+  opt:["Opcionális: Wim Hof-módszer, heti 1x"," egy CO₂-táblázat helyett. Csak fekve: 3 kör 30 gyors mély légvétellel, majd nyugodt visszatartás kilégzés után, végül egy mély belégzés 15 mp-es visszatartással. Soha ne vízben, állva vagy vezetés közben."],
+  why:"Az erősebb belégző izmok késleltetik a légzési fáradtságot. A CO₂-tűrés nyugodtan tart, amikor ritkul a levegő."},
+ p3:{tab:"6-8. hét",label:"6-8. HÉT",title:"Integráció",focus:"Vidd be a légzést a terhelt mozgásba.",
+  items:[
+  ["Terhelt túra, lépés–légzés ritmus","Heti 2x","Hátizsákkal. 2 lépés belégzés, 2 lépés kilégzés, meredekebb szakaszon 3:3-ra váltva. Olyan tempót tarts, ahol ez végig megoldható."],
+  ["Nyomásos légzés meredek szakaszokon","Túrák közben","Belégzés orron át, határozott kilégzés csücsörített ajkakon át."],
+  ["Csak orrlégzéses 2. zóna","Heti 1x · 45+ perc","Fejleszti a légzés gazdaságosságát."],
+  ["Belégző izom edzés (IMT)","Heti 3x · 30 légvétel","Fenntartó adag."],
+  ["CO₂-tűrési táblázat","Heti 1x · fekve vagy a földön ülve","Ugyanaz a formátum, mint a 3-5. héten."]],
+  why:"Ha a légzést a lépésritmushoz igazítod, egyenletes marad az erőkifejtés, és nem kapkodsz levegő után, nem fáradsz ki hosszú emelkedőkön."}
+};
+var INFO_HU={
+ res:{w:"A rekeszizmodat és az idegrendszer nyugtató (paraszimpatikus) oldalát. Percenként kb. 6 légvétel közel van ahhoz az üteméhez, ahol a szívritmus és a légzés a legjobban összehangolódik.",
+  y:"Csökkenti az alapstressz-szintedet és a légzésszámodat, és megtanít lassan, hasba lélegezni – erre épül a program minden további eleme. Egyben újraindító gomb egy kemény hegyi szakasz után."},
+ nasal:{w:"Az aerob alapodat és a légzés gazdaságosságát. A zárt száj korlátozza az intenzitást és lassítja a légzést.",
+  y:"A könnyű napokat valóban könnyűen tartja, és nyugodt, egyenletes légzésmintát edz, amit órákig tarthatsz.",
+  n:"Az orrlégzés nem ad varázsütésre több oxigént. Az értéke az, hogy őszintén tartja a tempódat."},
+ diaph:{w:"A rekeszizom-tudatosságot: a hasad vagy a felső mellkasod és a nyakad végzi-e a munkát.",
+  y:"Stressz alatt sokan magasan és felszínesen lélegeznek, ami fárasztó. Fekve könnyű megérezni a helyes mintát, így nehéz helyzetben fel tudod ismerni és ki tudod javítani."},
+ imt:{w:"A rekeszizmot és a többi belégző izmot, ellenállásos eszközzel terhelve – mintha súlyzós edzés lenne a tüdődnek.",
+  y:"Az erősebb légzőizmok később fáradnak el, így minden légvétel kevesebb erőfeszítésbe kerül. A kutatások többnyire kisebb légszomj-érzetet mutatnak; a teljesítménynövekedés valós, de szerény.",
+  n:"Tartsd mérsékeltnek az ellenállást és egyenletesnek a mozdulatot. Hagyd abba, ha szédülsz.",h:"Ülj egyenesen, a készüléken keresztül határozottan szívj be, majd normálisan fújd ki a levegőt. Ha a készülék nyomásértéket mutat, vagy mérted a maximumodat, kb. 50%-ot célozz meg. Mérő nélkül azt a legkönnyebb beállítást használd, ahol a 30 légvétel utolsó 5-je nehéznek érződik (kb. 6–7 a 10-ből), de a válladat lent tartod és a légzésed egyenletes marad. Csak akkor lépj feljebb egy kicsit, ha két alkalommal egymás után könnyű volt a 30 légvétel."},
+ co2:{w:"A légvételi inger tűrését, amelyet az emelkedő CO₂ vált ki, és azt a képességedet, hogy közben nyugodt maradj. A pihenők körönként rövidülnek, így a CO₂-nak kevesebb ideje van kiürülni.",
+  y:"Magasan ugyanannyi erőkifejtésnél erősebben lélegzel és jobban érzed a légszomjat. Ha ebben az érzésben gyakorlod a nyugalmat, elkerülheted a pánik-légzést és az energiapazarlást.",
+  n:"Az érzésre adott válaszodat edzi, nem a tüdőméretet. Feküdj le, vagy ülj a földre kemény tárgyaktól távol (az első alkalmakkor a fekvés a legjobb). Állj meg az első erős ingernél, és soha ne told el az elájulás széléig."},
+ pursed:{w:"A kilégzés kontrollját. A csücsörített ajkak enyhe ellennyomást hoznak létre, ami lassítja a kilégzést és nyitva tartja a légutakat.",
+  y:"A hosszabb, teljesebb kilégzés helyet csinál a következő légvételnek, és enyhíti a légszomjat meredek szakaszokon. Ugyanezt a technikát használják a tüdőrehabilitációban is."},
+ hike:{w:"A légzés és a lépés összehangolását, a terhelt aerob állóképességet és a valódi hátizsák cipelésének erejét.",
+  y:"Az egyenletes ritmus megakadályozza, hogy kapkodj levegő után, túlmelegedj vagy kifáradj hosszú emelkedőkön. A hátizsákkal gyakorolva automatikussá válik, amikor fáradt vagy."},
+ press:{w:"A kilégzés erejét és kontrollját nagy erőkifejtés közben.",
+  y:"Amikor a lejtő megnöveli az erőkifejtést, a határozott kilégzés megóv a felszínes, gyors légzéstől, és segít a ritmusban maradni. Általános technika magasságban.",
+  n:"Ha szédülést vagy bizsergést érzel, lassíts, és térj vissza a lassú, egyenletes légzéshez."},
+ z2:{w:"Az aerob alapodat: a szívet, a keringést és az izomsejtek zsírból történő energiatermelő képességét.",
+  y:"A csúcsnapok sok órán át tartanak mérsékelt erőkifejtéssel, és erre ez a leghatékonyabb edzés. A csak orrlégzés valóban a könnyű zónában tart."},
+ whm:{w:"A légzés és a CO₂-szint tudatos szabályozását, a légzésvisszatartás kényelmét és a kellemetlenség tűrését.",
+  y:"Egyesek szerint nyugalmat és kontrollérzetet ad. A valódi magassági előnyökre kevés a bizonyíték, ezért opcionális.",
+  n:"A gyors légzés csökkenti a CO₂-szintet, és a visszatartás alatt elájulhatsz. Csak fekve, soha ne vízben vagy víz közelében."}
+};
+var INFO={
+ res:{w:"Your diaphragm and the calming (parasympathetic) side of your nervous system. Around 6 breaths a minute is close to the rate where heart rate and breathing sync up best.",
+  y:"It lowers your baseline stress and breathing rate and teaches slow belly breathing, the pattern everything else in the program builds on. It's also your reset button after a hard push on the mountain."},
+ nasal:{w:"Your aerobic base and breathing economy. Keeping your mouth closed caps the intensity and slows the breath.",
+  y:"It keeps easy days truly easy and trains a calm, steady breathing pattern you can hold for hours.",
+  n:"Nasal breathing doesn't magically add oxygen. Its value is keeping you honest about pace."},
+ diaph:{w:"Diaphragm awareness: whether your belly or your upper chest and neck do the work.",
+  y:"Under stress many people breathe high and shallow, which is tiring. Lying down makes the right pattern easy to feel, so you can recognise and fix it when things get hard."},
+ imt:{w:"The diaphragm and other muscles you breathe in with, loaded with a resistance trainer like a weight-room set for your lungs.",
+  y:"Stronger breathing muscles tire later, so each breath costs less effort. Studies mostly show less perceived breathlessness; the performance gains are real but modest.",
+  n:"Keep the resistance moderate and the form smooth. Stop if you get dizzy.",h:"Sit tall, breathe in firmly through the trainer and breathe out normally. If it shows a pressure reading or you've tested your max, aim for about 50%. With no gauge, use the lightest setting where the last 5 of the 30 breaths feel hard (about 6–7 out of 10) but your shoulders stay down and your breathing stays smooth. Go up one small step only after two sessions where 30 breaths felt easy."},
+ co2:{w:"Your tolerance of the urge to breathe, which is driven by rising CO\u2082, and your ability to stay relaxed while it builds. The rests get shorter each round so CO\u2082 has less time to clear.",
+  y:"Up high you breathe harder and feel breathless at the same effort. Practising calm in that sensation helps you avoid panic breathing and wasted energy.",
+  n:"It trains your response to the sensation, not lung size. Lie down or sit on the floor away from hard objects (lying is best for your first sessions). Stop at the first strong urge and never push to the edge of blacking out."},
+ pursed:{w:"Exhale control. Pursing your lips creates light back-pressure that slows the exhale and keeps the airways open.",
+  y:"A longer, fuller exhale makes room for the next breath and eases breathlessness on steep sections. It's the same technique used in lung rehab."},
+ hike:{w:"Breath-to-step coordination, loaded aerobic endurance and the strength of carrying your real pack.",
+  y:"A steady rhythm stops you from gasping, overheating and burning out on long climbs. Practising with the pack makes it automatic when you're tired."},
+ press:{w:"Exhale strength and control during hard effort.",
+  y:"When the slope spikes your effort, a firm exhale keeps you from shallow, rapid breathing and helps you stay in rhythm. It's a standard technique at altitude.",
+  n:"If you feel lightheaded or tingly, ease off and return to slow, steady breaths."},
+ z2:{w:"Your aerobic base: heart, circulation and the muscle cells' ability to make energy from fat.",
+  y:"Summit days last many hours at a moderate effort, and this is the best-value training for that. Nasal-only keeps you truly in the easy zone."},
+ whm:{w:"Voluntary control of breathing and CO\u2082 levels, breath-hold comfort and tolerance of discomfort.",
+  y:"Some people find it builds composure and a sense of control. Evidence for real altitude benefits is limited, which is why it's optional.",
+  n:"Fast breathing lowers CO\u2082 and can make you faint during the hold. Lying down only, never in or near water."}
+};
+var TOOLS=[
+ {id:"sm_calm",en:["Pre-climb calm breathing","At the trailhead · 3 min","Slow nasal breathing with a longer exhale to settle your nerves before you start."],
+  hu:["Indulás előtti nyugtató légzés","A kiindulópontnál · 3 perc","Lassú orrlégzés hosszabb kilégzéssel, hogy induláskor megnyugodj."]},
+ {id:"sm_steps",en:["Step-rhythm reminder","While climbing · until you stop","A steady in-out cue matched to your steps. Pick 2:2, 3:3 or 4:4 and change it as the slope changes."],
+  hu:["Lépésritmus-emlékeztető","Mászás közben · amíg le nem állítod","Egyenletes be–ki jelzés a lépéseidhez igazítva. Válassz 2:2, 3:3 vagy 4:4 ritmust, és változtasd a lejtéssel."]},
+ {id:"sm_pursed",en:["Pursed-lip breathing cue","Steep sections · until you stop","In through the nose for 2 s, out through pursed lips for 4 s. Use it when you start to gasp."],
+  hu:["Csücsörített ajkú légzés jelzés","Meredek szakaszokon · amíg le nem állítod","2 mp belégzés orron át, 4 mp kilégzés csücsörített ajkakon át. Akkor használd, ha kapkodni kezdesz levegő után."]},
+ {id:"sm_reset",en:["Short recovery reset","At a rest stop · 2 min","Stop if it's safe, drop your shoulders and take slow breaths with a long exhale."],
+  hu:["Rövid regeneráló újraindítás","Pihenőnél · 2 perc","Ha biztonságos, állj meg, engedd le a válladat, és lélegezz lassan, hosszú kilégzéssel."]},
+ {id:"sm_descent",en:["Descent breathing","Going down · until you stop","Steady, relaxed breathing while you focus on your footing. Don't hold your breath on tricky steps."],
+  hu:["Lefelé menet légzés","Lefelé · amíg le nem állítod","Egyenletes, laza légzés, miközben a lábad elhelyezésére figyelsz. Ne tartsd vissza a lélegzeted nehéz lépéseknél."]}
+];
+function toolOf(id){var r;TOOLS.forEach(function(o){if(o.id===id)r=LANG==="hu"?o.hu:o.en;});return r;}
+INFO.sm_calm={w:"Your calming (parasympathetic) response. A longer exhale than inhale slows your heart rate.",y:"Pre-climb nerves make you breathe fast and shallow. Starting calm saves energy and keeps your breathing efficient from the first step."};
+INFO.sm_steps={w:"Breath-to-step coordination.",y:"A steady rhythm keeps effort even and stops gasping. Use shorter counts (2:2) on steep ground and longer ones (3:3 or 4:4) when it eases.",n:"It assumes about one step per second. Change the rhythm until it matches your pace."};
+INFO.sm_pursed={w:"Exhale control.",y:"A slower exhale keeps the airways open and helps you recover your breath after a hard pull.",n:"If you feel lightheaded or tingly, ease off and return to slow, steady breaths."};
+INFO.sm_reset={w:"Your breathing rate and heart rate coming back down.",y:"A couple of calm minutes after a hard section puts your breathing back under control, so the next section starts smoother.",n:"Skip it if you feel unwell. Symptoms mean descend."};
+INFO.sm_descent={w:"Steady breathing while you concentrate and your legs tire.",y:"On the way down people often hold their breath while focusing on footing, and tired legs still need oxygen. Going lower also usually eases altitude symptoms."};
+INFO_HU.sm_calm={w:"A nyugtató (paraszimpatikus) válaszodat. A belégzésnél hosszabb kilégzés lassítja a szívritmust.",y:"Az indulás előtti izgalom gyors, felszínes légzést okoz. Nyugodtan indulva energiát spórolsz, és az első lépéstől hatékony marad a légzésed."};
+INFO_HU.sm_steps={w:"A légzés és a lépés összehangolását.",y:"Az egyenletes ritmus egyenletesen tartja az erőkifejtést, és megakadályozza a kapkodást. Meredek terepen használj rövidebb számolást (2:2), enyhébb szakaszon hosszabbat (3:3 vagy 4:4).",n:"Körülbelül másodpercenként egy lépést feltételez. Változtasd a ritmust, amíg illeszkedik a tempódhoz."};
+INFO_HU.sm_pursed={w:"A kilégzés kontrollját.",y:"A lassabb kilégzés nyitva tartja a légutakat, és segít levegőhöz jutni egy kemény szakasz után.",n:"Ha szédülést vagy bizsergést érzel, lassíts, és térj vissza a lassú, egyenletes légzéshez."};
+INFO_HU.sm_reset={w:"A légzésszám és a szívritmus visszatérését a nyugalmi szintre.",y:"Néhány nyugodt perc egy kemény szakasz után visszaadja a légzésed fölötti kontrollt, így a következő szakasz simábban indul.",n:"Hagyd ki, ha rosszul érzed magad. Tünetek esetén szállj le."};
+INFO_HU.sm_descent={w:"Egyenletes légzést koncentráció és fáradó lábak mellett.",y:"Lefelé menet sokan visszatartják a lélegzetüket, miközben a lábuk elhelyezésére figyelnek, pedig a fáradt lábaknak is kell az oxigén. Lejjebb szállva a magassági tünetek is általában enyhülnek."};
+var PREP=[
+ {t:["Acclimatize: climb high, sleep low","Akklimatizáció: mássz magasra, aludj alacsonyan"],li:[
+  ["Where you sleep matters more than the highest point you reach in a day.","Az számít jobban, hol alszol, mint hogy napközben meddig jutsz fel."],
+  ["Avoid going straight from low altitude to sleeping above about 2,750 m. Spend a night or two lower first.","Kerüld, hogy alacsonyról közvetlenül kb. 2750 m fölött aludj. Előtte tölts egy-két éjszakát lejjebb."],
+  ["Once above about 3,000 m, raise your sleeping altitude by no more than about 500 m a night, and add an extra rest day for every 1,000 m you gain (roughly every 3–4 days).","Kb. 3000 m fölött az alvómagasságot éjszakánként legfeljebb kb. 500 m-rel növeld, és minden megtett 1000 m után iktass be egy extra pihenőnapot (nagyjából 3–4 naponta)."],
+  ["Climb high, sleep low: a higher day hike followed by sleeping lower helps your body adjust.","Mássz magasra, aludj alacsonyan: egy magasabbra vezető napi túra, majd alvás lejjebb segíti a szervezet alkalmazkodását."],
+  ["If you can, spend two or more nights above about 2,750 m in the two weeks before your trip.","Ha tudsz, a túra előtti két hétben tölts legalább két éjszakát kb. 2750 m fölött."],
+  ["Being fit does not protect you. Hard effort on arrival raises the risk, so keep the first days easy.","A jó erőnlét nem véd. Az érkezéskor végzett kemény megterhelés növeli a kockázatot, ezért az első napokat tartsd könnyűre."],
+  ["Drink enough, eat well and skip alcohol in the first days.","Igyál eleget, egyél jól, és az első napokon kerüld az alkoholt."]]},
+ {t:["Know your plan","Ismerd a terved"],li:[
+  ["See a doctor or travel clinic before a high trip, especially with heart or lung disease, pregnancy or a past episode of altitude illness. Any prevention medicine is their decision and never replaces a slow ascent.","Magas túra előtt keress fel orvost vagy utazási rendelést, különösen szív- vagy tüdőbetegség, terhesség vagy korábbi magassági betegség esetén. A megelőző gyógyszerről ők döntenek, és az sosem helyettesíti a lassú emelkedést."],
+  ["Never go up to sleep higher while you have symptoms. If they get worse, descend. Never leave someone with symptoms alone.","Tünetekkel soha ne menj feljebb aludni. Ha romlanak, szállj le. Tüneteket mutató társadat soha ne hagyd egyedül."],
+  ["Climb with a partner or guide, and agree a turn-around time and a descent rule before you start.","Társsal vagy vezetővel mássz, és indulás előtt beszéljétek meg a visszafordulási időpontot és a leszállási szabályt."],
+  ["Check that your travel insurance covers your maximum altitude and emergency evacuation.","Ellenőrizd, hogy az utazási biztosításod fedezi a legnagyobb magasságot és a mentést."],
+  ["Tell someone your route and when you expect to be back.","Mondd el valakinek az útvonaladat és azt, mikorra érsz vissza."]]},
+ {t:["Summit morning","A csúcsnap reggele"],li:[
+  ["Eat and drink before you set off, and start early so you can turn around in daylight.","Indulás előtt egyél és igyál, és korán indulj, hogy még nappal visszafordulhass."],
+  ["Begin with the pre-climb calm breathing, then settle into your step rhythm.","Kezdd az indulás előtti nyugtató légzéssel, aztán találd meg a lépésritmusodat."],
+  ["Keep a pace where you can still speak in short sentences.","Olyan tempót tarts, ahol még rövid mondatokban tudsz beszélni."],
+  ["Turn around at the agreed time, not when you feel like it. Symptoms mean descend.","A megbeszélt időpontban fordulj vissza, ne akkor, amikor kedved tartja. Tünetek esetén szállj le."]]}
+];
+var PACK=[
+ ["Doctor or travel clinic check done","Orvosi vagy utazási rendelői vizsgálat megvan"],
+ ["Acclimatization plan: sleeping altitude for each night, with rest days","Akklimatizációs terv: éjszakánkénti alvómagasság, pihenőnapokkal"],
+ ["Partner or guide, and turn-around time agreed","Társ vagy vezető, visszafordulási időpont megbeszélve"],
+ ["Insurance covers altitude and evacuation","A biztosítás fedezi a magasságot és a mentést"],
+ ["Route and return time shared with someone","Útvonal és hazaérkezési idő megosztva valakivel"],
+ ["Weather and conditions checked","Időjárás és körülmények ellenőrizve"],
+ ["Layers: base layer, warm mid layer, wind and rain shell, hat, gloves","Rétegek: alsó réteg, meleg középső réteg, szél- és esőálló héj, sapka, kesztyű"],
+ ["Sun protection: sunglasses, sunscreen, lip balm","Napvédelem: napszemüveg, naptej, ajakbalzsam"],
+ ["Headlamp with spare batteries","Fejlámpa tartalék elemekkel"],
+ ["Enough water, food and a warm drink","Elég víz, étel és egy meleg ital"],
+ ["Map or offline GPS, phone charged, power bank kept warm","Térkép vagy offline GPS, feltöltött telefon, melegen tartott powerbank"],
+ ["First-aid kit, whistle and emergency contacts","Elsősegély-készlet, síp és vészhelyzeti elérhetőségek"],
+ ["Well-worn boots and trekking poles","Bejárt túracipő és túrabot"]
+];
+function packCnt(){var n=0;PACK.forEach(function(_,i){if(pack["k"+i])n++;});return tf("{0} / {1} ready",n,PACK.length);}
+function prepHtml(){
+ var hu=LANG==="hu",h='<h3 class="sub" style="margin-top:30px">'+tx("Before you go")+'</h3><p class="note" style="padding-top:0">'+tx("General guidance, not medical advice. Check your plan with a doctor and your guide.")+'</p>';
+ PREP.forEach(function(c){h+='<details class="dt"><summary><span>'+(hu?c.t[1]:c.t[0])+'</span></summary><ul>'+c.li.map(function(x){return '<li>'+(hu?x[1]:x[0])+'</li>';}).join("")+'</ul></details>';});
+ h+='<details class="dt"><summary><span>'+tx("Pre-trip checklist")+'</span><span class="cnt" id="packCnt">'+packCnt()+'</span></summary><div class="pack">'+
+  PACK.map(function(x,i){return '<label class="pk"><input type="checkbox" data-pk="k'+i+'"'+(pack["k"+i]?" checked":"")+'><span>'+(hu?x[1]:x[0])+'</span></label>';}).join("")+'</div></details>';
+ return h+'<p class="note fine">'+tx("Based on CDC Yellow Book and Wilderness Medical Society guidance. Check the latest advice for your trip.")+'</p>';
+}
+function summitHtml(){
+ var hu=LANG==="hu",h='<div class="top"><span class="label">'+tx("SUMMIT DAY")+'</span></div><h2 class="title">'+tx("Summit-day toolkit")+'</h2><p class="focus">'+tx("Quick tools for the mountain. Only slow, rhythmic breathing: no breath-holds, no fast breathing.")+'</p>'+
+  '<div class="alert"><h3>'+tx("Symptoms mean descend")+'</h3><p>'+tx("Headache with nausea, dizziness, unusual tiredness or poor sleep can be early altitude sickness. Don't go higher until it clears, and if it gets worse, descend.")+'</p><p>'+tx("Descend immediately and get help for confusion, loss of balance or coordination, breathlessness at rest, a wet cough or chest tightness.")+'</p><p class="fine">'+tx("Breathwork never treats altitude sickness. This is a general reminder, not medical advice.")+'</p></div>';
+ TOOLS.forEach(function(o){var x=hu?o.hu:o.en;
+  h+='<div class="tool"><div class="tl"><div class="n">'+x[0]+IB(o.id,o.id)+'</div><div class="f">'+x[1]+'</div><div class="d">'+x[2]+'</div>'+IP(o.id,o.id)+'</div><button class="go" type="button" data-tool="'+o.id+'" aria-label="'+tx("Start timer:")+' '+x[0]+'">'+tx("▶ Start")+'</button></div>';});
+ h+=prepHtml();
+ return h;
+}
+function IB(id,u){return INFO[id]?'<button class="ib" type="button" aria-expanded="false" aria-controls="inf_'+u+'" aria-label="'+tx("About this exercise")+'">i</button>':"";}
+function IP(id,u){var x=(LANG==="hu"&&INFO_HU[id])||INFO[id];if(!x)return"";return '<div class="inf" id="inf_'+u+'" hidden><p><b>'+tx("Works:")+'</b> '+x.w+'</p><p><b>'+tx("Why do it:")+'</b> '+x.y+'</p>'+(x.h?'<p><b>'+tx("How to set it:")+'</b> '+x.h+'</p>':'')+(x.n?'<p><b>'+tx("Note:")+'</b> '+x.n+'</p>':'')+'</div>';}
+var store={};try{store=JSON.parse(localStorage.getItem("ab_state")||"{}");}catch(e){}
+function save(){try{localStorage.setItem("ab_state",JSON.stringify(store));}catch(e){}}
+var tabs=document.getElementById("tabs"),main=document.getElementById("main");
+function build(){
+ var t='<button role="tab" data-i="0">'+tx("Today")+'</button>',m='<section role="tabpanel" id="s0"></section>',hu=LANG==="hu";
+ PH.forEach(function(p,i){
+  var h=hu?HUPH[p.id]:null;
+  t+='<button role="tab" data-i="'+(i+1)+'">'+(h?h.tab:p.tab)+'</button>';
+  var rows=p.items.map(function(it,j){var k=p.id+"_"+j,x=h?h.items[j]:it;
+   return '<tr data-k="'+k+'" class="'+(store[k]?"done":"")+'"><td class="chk"><input type="checkbox" aria-label="'+tx("Mark as done:")+' '+x[0]+'"'+(store[k]?" checked":"")+'></td><td><div class="n">'+x[0]+IB(it[4]||it[3],k)+'</div><div class="f">'+x[1]+'</div><div class="d">'+x[2]+'</div>'+IP(it[4]||it[3],k)+'</td>'+
+    '<td class="gt">'+(it[3]?'<button class="go" type="button" data-p="'+i+'" data-j="'+j+'" aria-label="'+tx("Start timer:")+' '+x[0]+'">'+tx("▶ Start")+'</button>':'')+'</td></tr>';}).join("");
+  var opt="";if(p.opt){var oh=h?h.opt:p.opt;opt='<div class="opt"><b>'+oh[0]+'</b>'+IB("whm","whm")+oh[1]+IP("whm","whm")+'<button class="go" data-t="whm" type="button">'+tx("▶ Start guided session")+'</button></div>';}
+  m+='<section role="tabpanel" id="s'+(i+1)+'"><div class="top"><span class="label">'+(h?h.label:p.label)+'</span><span class="badge" id="b'+i+'"></span></div><h2 class="title">'+(h?h.title:p.title)+'</h2><p class="focus">'+(h?h.focus:p.focus)+'</p><table>'+rows+'</table>'+opt+'<div class="why"><b>'+tx("Why:")+'</b> '+(h?h.why:p.why)+'</div></section>';
+ });
+ t+='<button role="tab" data-i="4">'+tx("Summit")+'</button><button role="tab" data-i="5">'+tx("Progress")+'</button><button role="tab" data-i="6">'+tx("Safety")+'</button>';
+ m+='<section role="tabpanel" id="s4">'+summitHtml()+'</section>';m+='<section role="tabpanel" id="s5"></section>';m+='<section role="tabpanel" id="s6"><div class="top"><span class="label" style="color:var(--warn)">'+tx("READ FIRST")+'</span></div><h2 class="title">'+tx("Safety")+'</h2><div class="notes warn"><h3>'+tx("Never")+'</h3><ul><li>'+tx("Hold your breath in water, in a shower or bath, while driving, or standing.")+'</li><li>'+tx("Hyperventilate on purpose outside the optional lying-down Wim Hof session.")+'</li><li>'+tx("Use breathwork during the climb to push past altitude symptoms.")+'</li></ul><h3>'+tx("Stop if")+'</h3><ul><li>'+tx("You feel dizzy, faint or severely tingly.")+'</li><li>'+tx("You have heart or lung issues. Check with a doctor before IMT or breath-holds.")+'</li></ul></div><div class="notes"><h3>'+tx("On the mountain")+'</h3><ul><li>'+tx("Use slow, rhythmic nasal and pursed-lip breathing. Skip breath-holds and fast-breathing drills.")+'</li><li>'+tx("Breathwork does not prevent altitude sickness. Ascend gradually and descend if symptoms worsen.")+'</li></ul></div><button class="reset" id="reset">'+tx("Reset progress")+'</button></section>';
+ tabs.innerHTML=t;main.innerHTML=m;renderToday();renderProgress();
+}
+function badges(){PH.forEach(function(p,i){var d=p.items.filter(function(_,j){return store[p.id+"_"+j];}).length;document.getElementById("b"+i).textContent=tf("{0} / {1} done",d,p.items.length);});}
+function show(i,keep){[].forEach.call(document.querySelectorAll("section"),function(s,j){s.classList.toggle("active",j===i);});[].forEach.call(tabs.children,function(b,j){b.classList.toggle("active",j===i);b.setAttribute("aria-selected",String(j===i));});var ab=tabs.children[i];if(ab&&tabs.scrollWidth>tabs.clientWidth)tabs.scrollLeft=ab.offsetLeft-(tabs.clientWidth-ab.offsetWidth)/2;if(!keep)window.scrollTo(0,0);}
+function applyStatic(){
+ var hu=LANG==="hu";document.documentElement.lang=LANG;
+ $("h1").textContent=tx("8-Week Breathwork Program");$("hp").textContent=tx("Breathing efficiency, CO₂ tolerance and composure under load. 15-20 min/day.");
+ $("ft").textContent=tx("Breathwork supports acclimatization; it does not replace it. Climb high, sleep low.");
+ document.title=hu?"Altitude Breath: 8 hetes légzéstréning-program":"Altitude Breath: 8-Week Breathwork Program";
+ $("ov").setAttribute("aria-label",tx("Exercise timer"));$("snd").setAttribute("aria-label",tx("Toggle sound"));$("ovx").setAttribute("aria-label",tx("Close timer"));
+ [].forEach.call(document.querySelectorAll(".lang button"),function(b){b.classList.toggle("on",b.dataset.l===LANG);b.setAttribute("aria-pressed",String(b.dataset.l===LANG));});
+}
+function setLang(l){
+ if(l===LANG)return;LANG=l;dataMsg="";try{localStorage.setItem("ab_lang",l);}catch(e){}
+ var cur=0;[].forEach.call(tabs.children,function(b,j){if(b.classList.contains("active"))cur=j;});
+ applyStatic();build();badges();show(cur,true);
+}
+document.querySelector(".lang").addEventListener("click",function(e){var b=e.target.closest("button");if(b)setLang(b.dataset.l);});
+/* ============ Today view ============ */
+var SCHED={ /* program day 1..7 -> exercise indexes inside the phase */
+ p1:[[0,1],[0,1,2],[0,1],[0,1,2],[0,1],[0,1,2],[0,1]],
+ p2:[[0,2],[0,1],[2],[0],[0,1],[0,2],[]],
+ p3:[[3],[0],[3,4],[2],[3],[0],[]]
+};
+var ALSO={p3_0:"p3_1"};
+var plan={start:null},log={},editStart=false;
+try{plan=JSON.parse(localStorage.getItem("ab_plan")||"null")||{start:null};}catch(e){}
+try{log=JSON.parse(localStorage.getItem("ab_log")||"{}")||{};}catch(e){}
+var hist={holds:[]},bl={};
+try{hist=JSON.parse(localStorage.getItem("ab_hist")||"null")||{holds:[]};}catch(e){}
+try{bl=JSON.parse(localStorage.getItem("ab_bl")||"null")||{};}catch(e){}
+if(!Array.isArray(hist.holds))hist.holds=[];
+var pack={};try{pack=JSON.parse(localStorage.getItem("ab_pack")||"null")||{};}catch(e){}
+function savePack(){try{localStorage.setItem("ab_pack",JSON.stringify(pack));}catch(e){}}
+function saveHist(){try{localStorage.setItem("ab_hist",JSON.stringify(hist));}catch(e){}}
+function saveBl(){try{localStorage.setItem("ab_bl",JSON.stringify(bl));}catch(e){}}
+function savePlan(){try{localStorage.setItem("ab_plan",JSON.stringify(plan));}catch(e){}}
+function saveLog(){try{localStorage.setItem("ab_log",JSON.stringify(log));}catch(e){}}
+function pad(n){return n<10?"0"+n:""+n;}
+function ymd(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
+function parseD(s){var a=s.split("-");return new Date(+a[0],+a[1]-1,+a[2]);}
+function addDays(s,n){var d=parseD(s);d.setDate(d.getDate()+n);return ymd(d);}
+function diffDays(a,b){var x=parseD(a),y=parseD(b);return Math.round((Date.UTC(y.getFullYear(),y.getMonth(),y.getDate())-Date.UTC(x.getFullYear(),x.getMonth(),x.getDate()))/864e5);}
+function todayStr(){return ymd(new Date());}
+function fmtDate(s){try{return parseD(s).toLocaleDateString(LANG==="hu"?"hu-HU":"en-GB",{weekday:"long",day:"numeric",month:"long"});}catch(e){return s;}}
+function phaseOfWeek(w){return w<=2?0:w<=5?1:2;}
+function sessionsOn(n){if(n<0||n>=56)return null;var pid=PH[phaseOfWeek(Math.floor(n/7)+1)].id;return SCHED[pid][n%7].map(function(j){return pid+"_"+j;});}
+function itemOf(id){var a=id.split("_"),j=+a[1],it,x;PH.forEach(function(p){if(p.id===a[0])it=p.items[j];});x=LANG==="hu"?HUPH[a[0]].items[j]:it;return {it:it,x:x};}
+function srow(date,id){
+ var o=itemOf(id),dn=!!log[date+"|"+id],f=o.x[1],dose=f.indexOf("·")>=0?f.split("·").pop().trim():"",ex=ALSO[id]?itemOf(ALSO[id]).x[0]:"";
+ return '<div class="srow'+(dn?" done":"")+'" data-d="'+date+'" data-id="'+id+'"><input type="checkbox" class="tdc" aria-label="'+tx("Mark as done:")+' '+o.x[0]+'"'+(dn?" checked":"")+'>'+
+  '<div class="sm"><div class="n">'+o.x[0]+'</div>'+(dose?'<div class="f">'+dose+'</div>':'')+(ex?'<div class="f">+ '+ex+'</div>':'')+'</div>'+
+  '<button class="go" type="button" data-d="'+date+'" data-id="'+id+'" aria-label="'+tx("Start timer:")+' '+o.x[0]+'">'+tx("▶ Start")+'</button></div>';
+}
+function head(label,title,text){return '<div class="top"><span class="label">'+label+'</span></div><h2 class="title">'+title+'</h2>'+(text?'<p class="focus">'+text+'</p>':'');}
+var adjOpen=false;
+function lvName(v){return tx(v<0?"Lighter":v>0?"Extended":"Standard");}
+function undoHtml(td){return(plan.undo&&plan.undoDay===td)?'<div class="ok">'+tx("Plan adjusted.")+' <button class="lk" id="tdUndo" type="button">'+tx("Undo")+'</button></div>':"";}
+function mut(fn){plan.undo={start:plan.start,level:plan.level||0};plan.undoDay=todayStr();plan.snooze=null;fn();adjOpen=false;savePlan();renderToday();}
+function adjHtml(w){
+ var o="",i,lv=plan.level||0;
+ for(i=1;i<=8;i++)o+='<option value="'+i+'"'+(i===w?" selected":"")+'>'+tf("Week {0}",i)+'</option>';
+ function ar(btn,desc){return '<div class="ar">'+btn+'<p class="note">'+desc+'</p></div>';}
+ return '<div class="card adj"><h3 class="sub" style="margin-top:0">'+tx("Adjust your plan")+'</h3>'+
+  ar('<button class="pri" id="tdKeep" type="button">'+tf("Continue from week {0}",w)+'</button>',tx("Keep the calendar as it is. Missed sessions stay available as optional catch-up."))+
+  ar('<button class="reset" id="tdRepeat" type="button">'+tx("Repeat this week")+'</button>',tf("Start week {0} over from today.",w))+
+  ar('<label class="dl" for="tdWeek" style="display:inline;margin-right:8px">'+tx("Start from week")+'</label><select id="tdWeek">'+o+'</select> <button class="reset" id="tdGoWeek" type="button">'+tx("Go")+'</button>',tx("That week begins today. Your history is kept."))+
+  ar('<span class="dl" style="display:block">'+tx("Shift the schedule later")+'</span><div class="btns" style="margin-top:0"><button class="reset" type="button" data-sh="1">'+tx("1 day")+'</button><button class="reset" type="button" data-sh="3">'+tx("3 days")+'</button><button class="reset" type="button" data-sh="7">'+tx("1 week")+'</button></div>',tx("Everything moves later. Handy after a break, illness or a busy stretch."))+
+  ar('<span class="dl" style="display:block">'+tx("Intensity")+'</span><div class="seg2" role="group" aria-label="'+tx("Intensity")+'">'+[-1,0,1].map(function(v){return '<button type="button" data-lv="'+v+'" class="'+(v===lv?"on":"")+'" aria-pressed="'+(v===lv)+'">'+lvName(v)+'</button>';}).join("")+'</div>',tx("Scales timed sessions, breath counts and CO₂ rounds by about 25% down or up. Listen to your body."))+
+  '<div class="btns"><button class="reset" id="tdChange" type="button">'+tx("Change start date")+'</button><button class="reset red" id="tdAdjClose" type="button">'+tx("Close")+'</button></div></div>';
+}
+function renderToday(){
+ var el=$("s0");if(!el)return;
+ var td=todayStr(),h,n=plan.start?diffDays(plan.start,td):0,L=tx("Today").toUpperCase();
+ if(!plan.start||editStart){
+  h=head(L,tx("Start your program"),tx("Pick the day you begin week 1. Today's sessions and your weekly progress will follow from it."))+
+   '<div class="card"><label class="dl" for="tdDate">'+tx("Start date")+'</label><input type="date" id="tdDate" value="'+(plan.start||td)+'"><div class="btns"><button class="go big" id="tdSet" type="button">'+tx("Start program")+'</button>'+(plan.start?'<button class="reset" id="tdCancel" type="button">'+tx("Cancel")+'</button>':'')+'</div></div>';
+ }else if(n<0){
+  h=head(L,tx("Almost time"),n===-1?tf("Program starts: tomorrow ({0})",fmtDate(plan.start)):tf("Program starts: {0} (in {1} days)",fmtDate(plan.start),-n))+undoHtml(td)+
+   blPrompt("base")+'<div class="btns"><button class="reset" id="tdNow" type="button">'+tx("Start today instead")+'</button><button class="reset" id="tdChange" type="button">'+tx("Change start date")+'</button></div>';
+ }else if(n>=56){
+  h=head(L,tx("Program complete"),tx("You've reached the end of the 8 weeks. Repeat any phase from its tab, or start again whenever you like."))+undoHtml(td)+
+   blPrompt("retest")+'<div class="btns"><button class="go big" id="tdAgain" type="button">'+tx("Start again today")+'</button><button class="reset" id="tdChange" type="button">'+tx("Change start date")+'</button></div>';
+ }else{
+  var w=Math.floor(n/7)+1,d=n%7,ph=PH[phaseOfWeek(w)],hp=LANG==="hu"?HUPH[ph.id]:null,ids=sessionsOn(n),wk0=n-d,planned=0,done=0,strip="",late=[],missed=0,k;
+  for(k=0;k<n;k++){var dd=addDays(plan.start,k);sessionsOn(k).forEach(function(id){if(!log[dd+"|"+id])missed++;});}
+  for(k=0;k<7;k++){var dt=addDays(plan.start,wk0+k),ss=sessionsOn(wk0+k),dn=0,cls;
+   ss.forEach(function(id){if(log[dt+"|"+id])dn++;else if(k<d)late.push({d:dt,id:id});});
+   planned+=ss.length;done+=dn;
+   cls=ss.length===0?"rest":dn===ss.length?"full":k<d?(dn?"part":"missed"):k===d?(dn?"part":""):"future";
+   strip+='<span class="wd '+cls+(k===d?" today":"")+'" role="img" aria-label="'+tf("Day {0}",k+1)+'">'+(k+1)+'</span>';}
+  var nextId=null;ids.forEach(function(id){if(!nextId&&!log[td+"|"+id])nextId=id;});
+  var rows=ids.map(function(id){return srow(td,id);}).join("");
+  var tm=sessionsOn(n+1),tmTxt=tm===null?"":(tm.length?tf("Tomorrow: {0}",tm.map(function(id){return itemOf(id).x[0];}).join(", ")):tx("Tomorrow: rest day"));
+  var lv=plan.level||0;
+  h='<div class="top"><span class="label">'+tf("Week {0} of 8 · Day {1}",w,d+1)+'</span><span class="badge">'+fmtDate(td)+'</span></div><h2 class="title">'+(hp?hp.title:ph.title)+'</h2><p class="focus">'+(hp?hp.focus:ph.focus)+'</p>'+
+   '<div class="wk">'+strip+'</div><div class="bar" aria-hidden="true"><i style="width:'+(planned?Math.round(100*done/planned):0)+'%"></i></div><div class="pg">'+tf("{0} / {1} sessions done this week",done,planned)+(lv?' · '+tf("Intensity: {0}",lvName(lv)+" ("+(lv<0?"−25%":"+25%")+")"):"")+'</div>'+undoHtml(td);
+  if(adjOpen)h+=adjHtml(w);
+  else if(missed>=4&&plan.snooze!==td)h+='<div class="card nudge"><b>'+tx("Missed a few sessions? That's normal.")+'</b><p class="note" style="padding:6px 0 0">'+tx("Nothing is lost. Pick what suits you, or just keep going.")+'</p><div class="btns"><button class="pri" id="tdKeep" type="button">'+tx("Continue as planned")+'</button><button class="reset" id="tdAdj" type="button">'+tx("Adjust plan")+'</button></div></div>';
+  if(!adjOpen)h+=blPrompt(w===1?"base":w===8?"retest":"");
+  if(nextId)h+='<div class="nx"><button class="go big" type="button" data-d="'+td+'" data-id="'+nextId+'">▶ '+tf("Start next: {0}",itemOf(nextId).x[0])+'</button></div>';
+  h+='<h3 class="sub">'+tx("Today's sessions")+'</h3>';
+  if(!ids.length)h+='<p class="note">'+tx("Rest day. No breathwork scheduled. Easy walking is fine.")+'</p>';
+  else{h+=rows;if(!nextId)h+='<div class="ok">'+tx("All done for today. Nice work.")+'</div>';}
+  if(tmTxt)h+='<p class="note">'+tmTxt+'</p>';
+  if(late.length){late.reverse();h+='<h3 class="sub">'+tx("Catch up if you like")+'</h3><p class="note" style="padding-top:0">'+tx("Earlier this week, still open. No pressure.")+'</p>'+late.slice(0,5).map(function(o){return srow(o.d,o.id);}).join("");}
+  if(!adjOpen)h+='<div class="btns" style="margin-top:22px"><button class="reset" id="tdAdj" type="button">'+tx("Adjust plan")+'</button></div>';
+ }
+ el.innerHTML=h;
+}
+document.addEventListener("visibilitychange",function(){if(!document.hidden)renderToday();});
+/* ============ Progress, baseline/retest, backup, calendar ============ */
+var RE_D=/^\d{4}-\d{2}-\d{2}$/,blOpen=null,dataMsg="",icsT="07:00";
+var BLM=[["rate","Resting breathing rate (breaths/min)"],["walk","Nasal-only walk comfort (1–5)"],["borg","Breathlessness at a repeatable pace (0–10)"],["hold","Relaxed hold (seconds)"]];
+function fmtShort(d){try{return parseD(d).toLocaleDateString(LANG==="hu"?"hu-HU":"en-GB",{day:"numeric",month:"short"});}catch(e){return d;}}
+function daysSet(){var o={};Object.keys(log).forEach(function(k){o[k.split("|")[0]]=1;});return o;}
+function runs(ds,td){
+ var dates=Object.keys(ds).sort(),run=0,best=0,cur=0,i,c,d;
+ for(i=0;i<dates.length;i++){run=(i>0&&diffDays(dates[i-1],dates[i])===1)?run+1:1;if(run>best)best=run;}
+ c=ds[td]?td:ds[addDays(td,-1)]?addDays(td,-1):null;
+ if(c){d=c;while(ds[d]){cur++;d=addDays(d,-1);}}
+ return {cur:cur,best:best};
+}
+function recHolds(){
+ if(!R||R.hs||!R.holds.length||(R.tid!=="co2"&&R.tid!=="whm"))return;
+ R.hs=1;hist.holds.push({d:todayStr(),x:R.tid,s:R.holds.map(function(v){return Math.round(v);})});hist.holds=hist.holds.slice(-40);saveHist();
+}
+function blPrompt(kind){
+ var ok=kind==="base"?!bl.base:kind==="retest"?!!(bl.base&&!bl.retest):false;if(!ok)return"";
+ return '<div class="card"><p class="note" style="padding:0">'+tx(kind==="base"?"Optional: take a baseline before you start. About 5 minutes.":"Optional: retest to see your rough trend. About 5 minutes.")+'</p><div class="btns"><button class="reset" type="button" data-go="5" data-bl="'+kind+'">'+tx(kind==="base"?"Open baseline":"Open retest")+'</button></div></div>';
+}
+function blHtml(){
+ var b=bl.base||{},r=bl.retest||{},h='<h3 class="sub">'+tx("Baseline & retest")+'</h3><p class="note">'+tx("Optional. Measure a few simple things before week 1 and again after week 8. Single readings vary day to day, so read them as a rough trend.")+'</p>';
+ h+='<div class="tw"><table class="bt"><tr><th></th><th>'+tx("Baseline")+(b.d?'<small>'+fmtShort(b.d)+'</small>':'')+'</th><th>'+tx("Retest")+(r.d?'<small>'+fmtShort(r.d)+'</small>':'')+'</th><th>'+tx("Change")+'</th></tr>';
+ BLM.forEach(function(m){var a=b[m[0]],c=r[m[0]],ch="—",d;
+  if(a!=null&&c!=null){d=Math.round((c-a)*10)/10;ch=d>0?"+"+d:d<0?"−"+Math.abs(d):"0";}
+  h+='<tr><td>'+tx(m[1])+'</td><td>'+(a!=null?a:"—")+'</td><td>'+(c!=null?c:"—")+'</td><td>'+ch+'</td></tr>';});
+ h+='</table></div>';
+ if(!blOpen)return h+'<div class="btns"><button class="reset" type="button" data-bl="base">'+tx("Record baseline")+'</button><button class="reset" type="button" data-bl="retest">'+tx("Record retest")+'</button></div>';
+ var cv=bl[blOpen]||{},wopt='<option value=""></option>',i;
+ for(i=1;i<=5;i++)wopt+='<option value="'+i+'"'+(cv.walk===i?" selected":"")+'>'+i+'</option>';
+ function fld(lab,id,inp,btn,note){return '<div class="ar"><label class="dl" for="'+id+'">'+tx(lab)+'</label><div class="fr">'+inp+(btn?'<button class="reset" type="button" data-bt="'+btn[0]+'">'+tx(btn[1])+'</button>':'')+'</div><p class="note">'+tx(note)+'</p></div>';}
+ function ni(id,min,max,step,v){return '<input type="number" id="'+id+'" min="'+min+'" max="'+max+'" step="'+step+'" inputmode="decimal" value="'+(v!=null?v:"")+'">';}
+ h+='<div class="card"><h3 class="sub" style="margin-top:0">'+tx(blOpen==="base"?"Record baseline":"Record retest")+'</h3>'+
+  fld(BLM[0][1],"blRate",ni("blRate",4,60,1,cv.rate),["bl_rate","▶ 60 s timer"],"Sit quietly and count one minute of breaths.")+
+  fld(BLM[1][1],"blWalk",'<select id="blWalk">'+wopt+'</select>',["bl_walk","▶ 10 min timer"],"Easy 10-minute walk, mouth closed. 1 = hard, 5 = easy.")+
+  fld(BLM[2][1],"blBorg",ni("blBorg",0,10,.5,cv.borg),null,"Same stairs or hill at the same pace each time. 0 = none, 10 = maximal.")+
+  fld(BLM[3][1],"blHold",ni("blHold",0,600,1,cv.hold),["bl_hold","▶ Hold timer"],"Lying down, one relaxed hold after a normal exhale. Stop at the first strong urge.")+
+  '<div class="btns"><button class="pri" id="blSave" type="button">'+tx("Save")+'</button><button class="reset" id="blCancel" type="button">'+tx("Cancel")+'</button></div><p class="note" id="blMsg" role="status"></p></div>';
+ return h;
+}
+function dataHtml(){
+ return '<h3 class="sub">'+tx("Your data")+'</h3><p class="note">'+tx("Everything is stored only on this device. No account, no tracking.")+'</p>'+
+  '<div class="btns"><button class="reset" id="dExport" type="button">'+tx("Export backup")+'</button><button class="reset" id="dImport" type="button">'+tx("Import backup")+'</button><input type="file" id="dFile" accept="application/json,.json" hidden></div>'+
+  '<div class="ar"><span class="dl" style="display:block">'+tx("Calendar reminders")+'</span><p class="note" style="padding-top:0">'+tx("Add your schedule to any calendar app. Re-export if you change your plan.")+'</p>'+
+  '<div class="fr" style="margin-top:8px"><label class="dl" for="icsTime" style="margin:0">'+tx("Reminder time")+'</label><input type="time" id="icsTime" value="'+icsT+'"><button class="reset" id="dIcs" type="button">'+tx("Download calendar file (.ics)")+'</button></div></div>'+
+  '<p class="note" id="dMsg" role="status">'+dataMsg+'</p>';
+}
+function progressHtml(){
+ var td=todayStr(),ds=daysSet(),nd=Object.keys(ds).length,tot=Object.keys(log).length,r=runs(ds,td),i,k,dots="",c14=0,h;
+ h=head(tx("PROGRESS"),tx("Personal practice history"),tx("A calm record, not a scoreboard. Nothing here needs to go up."));
+ h+='<div class="stats"><div class="stat"><b>'+tot+'</b><span>'+tx("Sessions logged")+'</span></div><div class="stat"><b>'+nd+'</b><span>'+tx("Days practised")+'</span></div><div class="stat"><b>'+r.cur+'</b><span>'+tx("Current run (days)")+'</span></div></div>';
+ for(i=13;i>=0;i--){var dd=addDays(td,-i),on=!!ds[dd];if(on)c14++;dots+='<span class="dot'+(on?" on":"")+(i===0?" t":"")+'" title="'+fmtShort(dd)+'"></span>';}
+ var l14=tf("Practised on {0} of the last 14 days.",c14);
+ h+='<div class="dots" role="img" aria-label="'+l14+'">'+dots+'</div><p class="note">'+l14+(r.best>1?' '+tf("Longest run: {0} days",r.best):'')+'</p><p class="note fine">'+tx("Rest days are part of the plan. A run is only a record, not a target.")+'</p>';
+ if(plan.start){var cur=diffDays(plan.start,td);
+  if(cur>=0){h+='<h3 class="sub">'+tx("Program weeks")+'</h3>';
+   for(var w=1;w<=8;w++){var w0=(w-1)*7;if(w0>cur)break;var pl=0,dn=0;
+    for(k=0;k<7;k++){(function(dt){sessionsOn(w0+k).forEach(function(id){pl++;if(log[dt+"|"+id])dn++;});})(addDays(plan.start,w0+k));}
+    h+='<div class="wr"><span>'+tf("Week {0}",w)+'</span><div class="bar" aria-hidden="true"><i style="width:'+(pl?Math.round(100*dn/pl):0)+'%"></i></div><span class="wn">'+dn+' / '+pl+'</span></div>';}}}
+ h+='<h3 class="sub">'+tx("Recent breath holds")+'</h3>';
+ var hs=hist.holds.slice(-5).reverse();
+ if(!hs.length)h+='<p class="note">'+tx("No holds recorded yet.")+'</p>';
+ else{hs.forEach(function(e){var avg=Math.round(e.s.reduce(function(a,b){return a+b;},0)/e.s.length);
+   h+='<div class="hr"><div class="n">'+fmtShort(e.d)+' · '+(e.x==="whm"?tx("Wim Hof breathing"):itemOf("p2_1").x[0])+'</div><div class="f">'+e.s.map(function(v){return fmt(v);}).join(" · ")+' — '+tf("Average {0}",fmt(avg))+'</div></div>';});
+  h+='<p class="note fine">'+tx("These numbers are only a personal log. A longer hold is not the goal.")+'</p>';}
+ return h+blHtml()+dataHtml();
+}
+function renderProgress(){var el=$("s5");if(el)el.innerHTML=progressHtml();}
+function setMsg(t){dataMsg=t;var e=$("dMsg");if(e)e.textContent=t;}
+/* --- backup --- */
+function bundle(){return {app:"altitude-breath",v:1,at:new Date().toISOString(),state:store,plan:{start:plan.start,level:plan.level||0},log:log,hist:hist,bl:bl,pack:pack,lang:LANG,snd:snd};}
+function num(v,a,b){v=+v;return (v===v&&v>=a&&v<=b&&v!==null)?v:null;}
+function cleanBundle(o){
+ if(!o||typeof o!=="object"||o.app!=="altitude-breath"||o.v!==1)return null;
+ var r={state:{},plan:{start:null},log:{},hist:{holds:[]},bl:{},pack:{}},RK=/^p[123]_\d$/;
+ if(o.state&&typeof o.state==="object")Object.keys(o.state).forEach(function(k){if(RK.test(k)&&o.state[k])r.state[k]=true;});
+ if(o.pack&&typeof o.pack==="object")Object.keys(o.pack).forEach(function(k){if(/^k\d{1,2}$/.test(k)&&+k.slice(1)<PACK.length&&o.pack[k]===true)r.pack[k]=true;});
+ if(o.plan&&typeof o.plan==="object"){if(typeof o.plan.start==="string"&&RE_D.test(o.plan.start)&&!isNaN(parseD(o.plan.start).getTime()))r.plan.start=o.plan.start;var lv=+o.plan.level;if(lv===-1||lv===1)r.plan.level=lv;}
+ if(o.log&&typeof o.log==="object")Object.keys(o.log).forEach(function(k){var a=k.split("|");if(a.length===2&&RE_D.test(a[0])&&RK.test(a[1])&&o.log[k])r.log[k]=1;});
+ if(o.hist&&Array.isArray(o.hist.holds))o.hist.holds.slice(-40).forEach(function(e){
+  if(e&&typeof e.d==="string"&&RE_D.test(e.d)&&(e.x==="co2"||e.x==="whm")&&Array.isArray(e.s)){
+   var s=[];e.s.slice(0,30).forEach(function(v){var n=num(v,0,3600);if(n!==null)s.push(Math.round(n));});if(s.length)r.hist.holds.push({d:e.d,x:e.x,s:s});}});
+ ["base","retest"].forEach(function(k){var b=o.bl&&o.bl[k];if(b&&typeof b==="object"&&typeof b.d==="string"&&RE_D.test(b.d)){var c={d:b.d},v;
+  if((v=num(b.rate,4,60))!==null)c.rate=v;if((v=num(b.walk,1,5))!==null)c.walk=v;if((v=num(b.borg,0,10))!==null)c.borg=v;if((v=num(b.hold,0,600))!==null)c.hold=v;r.bl[k]=c;}});
+ r.lang=(o.lang==="hu"||o.lang==="en")?o.lang:null;r.snd=typeof o.snd==="boolean"?o.snd:null;
+ return r;
+}
+function download(name,mime,text){
+ var blob=new Blob([text],{type:mime}),file=null;
+ try{file=new File([blob],name,{type:mime});}catch(e){}
+ if(file&&window.matchMedia&&matchMedia("(pointer:coarse)").matches&&navigator.canShare&&navigator.share&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:name}).catch(function(){});return;}
+ var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();
+ setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);
+}
+function importText(txt){
+ var o,c;try{o=JSON.parse(txt);}catch(e){o=null;}
+ c=cleanBundle(o);if(!c){setMsg(tx("That file isn't a valid backup."));return;}
+ if(!confirm(tx("Replace the data on this device with this backup?")))return;
+ var cur=0;[].forEach.call(tabs.children,function(b,j){if(b.classList.contains("active"))cur=j;});
+ store=c.state;plan=c.plan;log=c.log;hist=c.hist;bl=c.bl;pack=c.pack;save();savePlan();saveLog();saveHist();saveBl();savePack();
+ if(c.snd!==null){snd=c.snd;try{localStorage.setItem("ab_snd",snd?"1":"0");}catch(e){}paintSnd();}
+ if(c.lang&&c.lang!==LANG){LANG=c.lang;try{localStorage.setItem("ab_lang",LANG);}catch(e){}}
+ blOpen=null;editStart=false;adjOpen=false;applyStatic();build();badges();show(cur,true);setMsg(tx("Backup imported."));
+}
+/* --- calendar --- */
+function icsEsc(t){return String(t).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n");}
+function icsFold(line){var out="",cur=0,enc=new TextEncoder(),ch,b,i,arr=Array.from(line);
+ for(i=0;i<arr.length;i++){ch=arr[i];b=enc.encode(ch).length;if(cur+b>73){out+="\r\n ";cur=1;}out+=ch;cur+=b;}return out;}
+function icsStamp(d){return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"T"+pad(d.getHours())+pad(d.getMinutes())+"00";}
+function buildIcs(hhmm){
+ var L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Altitude Breath//EN","CALSCALE:GREGORIAN","X-WR-CALNAME:Altitude Breath"],n,ids,date,a,s,e,names,w,d,
+  hh=+hhmm.split(":")[0],mm=+hhmm.split(":")[1],now0=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
+ for(n=0;n<56;n++){ids=sessionsOn(n);if(!ids.length)continue;
+  date=addDays(plan.start,n);a=date.split("-");s=new Date(+a[0],+a[1]-1,+a[2],hh,mm);e=new Date(s.getTime()+20*60000);
+  names=ids.map(function(id){return itemOf(id).x[0];});w=Math.floor(n/7)+1;d=n%7;
+  L.push("BEGIN:VEVENT","UID:ab-"+date+"-"+n+"@altitude-breath","DTSTAMP:"+now0,"DTSTART:"+icsStamp(s),"DTEND:"+icsStamp(e),
+   "SUMMARY:"+icsEsc("Altitude Breath: "+names.join(", ")),"DESCRIPTION:"+icsEsc(tf("Week {0} of 8 · Day {1}",w,d+1)+"\n"+names.join("\n")),
+   "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Altitude Breath","TRIGGER:PT0S","END:VALARM","END:VEVENT");}
+ L.push("END:VCALENDAR");
+ return L.map(icsFold).join("\r\n")+"\r\n";
+}
+main.addEventListener("click",function(e){
+ var t=e.target,gb=t.closest("[data-go]");
+ if(gb){blOpen=gb.dataset.bl||null;renderProgress();show(+gb.dataset.go);return;}
+ var bb=t.closest("[data-bl]");if(bb){blOpen=bb.dataset.bl;renderProgress();return;}
+ var bt=t.closest("[data-bt]");
+ if(bt){var id=bt.dataset.bt,M={bl_rate:["Resting breathing rate","Sit quietly and count one minute of breaths."],bl_walk:["Nasal-only walk","Easy 10-minute walk, mouth closed. 1 = hard, 5 = easy."],bl_hold:["Relaxed hold","Lying down, one relaxed hold after a normal exhale. Stop at the first strong urge."]}[id];openT(id,tx(M[0]),tx(M[1]),null);return;}
+ if(t.id==="blCancel"){blOpen=null;renderProgress();return;}
+ if(t.id==="blSave"){
+  var v={rate:num($("blRate").value,4,60),walk:num($("blWalk").value,1,5),borg:num($("blBorg").value,0,10),hold:num($("blHold").value,0,600)},c={d:todayStr()},any=false;
+  if($("blWalk").value==="")v.walk=null;if($("blRate").value==="")v.rate=null;if($("blBorg").value==="")v.borg=null;if($("blHold").value==="")v.hold=null;
+  Object.keys(v).forEach(function(k){if(v[k]!==null){c[k]=v[k];any=true;}});
+  if(!any){$("blMsg").textContent=tx("Fill in at least one value.");return;}
+  bl[blOpen]=c;saveBl();blOpen=null;renderProgress();renderToday();return;}
+ if(t.id==="dExport"){download("altitude-breath-backup-"+todayStr()+".json","application/json",JSON.stringify(bundle(),null,2));setMsg(tx("Backup saved."));return;}
+ if(t.id==="dImport"){$("dFile").click();return;}
+ if(t.id==="dIcs"){if(!plan.start){setMsg(tx("Set a start date on the Today tab first."));return;}
+  var tv=$("icsTime").value||"07:00";icsT=tv;download("altitude-breath-schedule.ics","text/calendar",buildIcs(tv));setMsg(tx("Calendar file ready."));return;}
+});
+main.addEventListener("change",function(e){
+ if(e.target.dataset&&e.target.dataset.pk){var kk=e.target.dataset.pk;if(e.target.checked)pack[kk]=true;else delete pack[kk];savePack();var pc=$("packCnt");if(pc)pc.textContent=packCnt();return;}
+ if(e.target.id==="icsTime"){icsT=e.target.value||"07:00";return;}
+ if(e.target.id==="dFile"){var f=e.target.files&&e.target.files[0];if(!f)return;
+  if(f.size>2e6){setMsg(tx("That file isn't a valid backup."));return;}
+  var rd=new FileReader();rd.onload=function(){importText(String(rd.result));};rd.readAsText(f);e.target.value="";}
+});
+applyStatic();build();badges();show(0);
+tabs.addEventListener("click",function(e){var b=e.target.closest("button");if(b)show(+b.dataset.i);});
+main.addEventListener("click",function(e){
+ var id0=e.target.id;
+ if(id0==="tdSet"){var v=$("tdDate").value;if(/^\d{4}-\d{2}-\d{2}$/.test(v)){if(plan.start){plan.undo={start:plan.start,level:plan.level||0};plan.undoDay=todayStr();}plan.start=v;savePlan();editStart=false;renderToday();}return;}
+ if(id0==="tdCancel"){editStart=false;renderToday();return;}
+ if(id0==="tdChange"){editStart=true;adjOpen=false;renderToday();return;}
+ if(id0==="tdNow"||id0==="tdAgain"){plan.start=todayStr();savePlan();editStart=false;renderToday();return;}
+ if(id0==="tdAdj"){adjOpen=true;renderToday();return;}
+ if(id0==="tdAdjClose"){adjOpen=false;renderToday();return;}
+ if(id0==="tdKeep"){plan.snooze=todayStr();adjOpen=false;savePlan();renderToday();return;}
+ if(id0==="tdRepeat"){mut(function(){plan.start=addDays(todayStr(),-7*Math.floor(diffDays(plan.start,todayStr())/7));});return;}
+ if(id0==="tdGoWeek"){var gw=+$("tdWeek").value;mut(function(){plan.start=addDays(todayStr(),-7*(gw-1));});return;}
+ var shb=e.target.closest("[data-sh]");if(shb){mut(function(){plan.start=addDays(plan.start,+shb.dataset.sh);});return;}
+ var lvb=e.target.closest("[data-lv]");if(lvb){mut(function(){plan.level=+lvb.dataset.lv;});adjOpen=true;renderToday();return;}
+ if(id0==="tdUndo"){var u=plan.undo;if(u){plan.start=u.start;plan.level=u.level;plan.undo=null;savePlan();renderToday();}return;}
+ var g=e.target.closest(".go");
+ if(g){if(g.dataset.tool){var tl=toolOf(g.dataset.tool);openT(g.dataset.tool,tl[0],tl[2],null);return;}if(g.dataset.d){var o=itemOf(g.dataset.id);openT(o.it[3],o.x[0],o.x[2],g.dataset.id,g.dataset.d+"|"+g.dataset.id);return;}if(g.dataset.p!=null){var pp=PH[+g.dataset.p],jj=+g.dataset.j,it=pp.items[jj],x=LANG==="hu"?HUPH[pp.id].items[jj]:it;openT(it[3],x[0],x[2],pp.id+"_"+jj);}
+  else openT("whm",tx("Wim Hof breathing"),tx("3 rounds: 30 fast deep breaths, relaxed hold after an exhale, then one deep breath held 15 s."),null);return;}
+ var ib=e.target.closest(".ib");
+ if(ib){var pn=document.getElementById(ib.getAttribute("aria-controls")),op=pn.hidden;pn.hidden=!op;ib.setAttribute("aria-expanded",String(op));return;}
+ if(e.target.closest(".inf"))return;
+ if(e.target.id==="reset"){if(!confirm(tx("Reset all progress? This clears your ticks and history but keeps your start date.")))return;store={};save();log={};saveLog();hist={holds:[]};bl={};pack={};saveHist();saveBl();savePack();build();badges();show(6);return;}
+ var sr=e.target.closest(".srow");
+ if(sr){var kk=sr.dataset.d+"|"+sr.dataset.id,wasChk=e.target.classList.contains("tdc");if(log[kk])delete log[kk];else log[kk]=1;saveLog();renderToday();
+  if(wasChk){var nc=document.querySelector('.srow[data-d="'+sr.dataset.d+'"][data-id="'+sr.dataset.id+'"] .tdc');if(nc)nc.focus();}return;}
+ var tr=e.target.closest("tr");if(!tr||!tr.dataset.k)return;var k=tr.dataset.k;store[k]=!store[k];save();
+ tr.classList.toggle("done",!!store[k]);tr.querySelector("input").checked=!!store[k];badges();
+});
+
+/* ============ guided timer engine ============ */
+function $(i){return document.getElementById(i);}
+var ov=$("ov"),R=null,AC=null,WL=null,snd=true,CIRC=2*Math.PI*46;
+try{snd=localStorage.getItem("ab_snd")!=="0";}catch(e){}
+$("arc").style.strokeDasharray=CIRC;
+function paintSnd(){$("snd").classList.toggle("off",!snd);$("snd").setAttribute("aria-pressed",String(snd));}
+paintSnd();
+function now(){return Date.now()/1000;}
+function fmt(s){s=Math.max(0,Math.ceil(s-1e-6));var h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
+ return (h?h+":"+(m<10?"0":""):"")+m+":"+(x<10?"0":"")+x;}
+function tone(f,d,v){if(!snd||!AC||(R&&R.pre))return;try{var o=AC.createOscillator(),g=AC.createGain(),t=AC.currentTime;o.type="sine";o.frequency.value=f;
+ g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v||.2,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d+.05);}catch(e){}}
+function cue(p){if(p.q)return;tone({in:660,out:495,rest:392,hold:587,go:523}[p.k]||523,.35);if(navigator.vibrate&&(p.k==="hold"||p.k==="rest"))navigator.vibrate(60);}
+function chime(){tone(523,.5);setTimeout(function(){tone(659,.5);},180);setTimeout(function(){tone(784,.9);},360);if(navigator.vibrate)navigator.vibrate([200,100,200]);}
+function wl(on){try{if(WL){WL.release();WL=null;}if(on&&navigator.wakeLock)navigator.wakeLock.request("screen").then(function(l){WL=l;}).catch(function(){});}catch(e){}}
+document.addEventListener("visibilitychange",function(){if(!document.hidden&&R&&R.state==="run"){wl(true);syncAudio();}});
+
+/* ============ background-safe audio (cues are baked into a looping/pre-rendered track) ============ */
+var AUD=null,AURL=null,FREQ={in:660,out:495,rest:392,hold:587,go:523};
+function wavBlob(seq,total,chime){
+ var tail=chime?1.4:0,rate=total>1200?4000:8000,n=Math.ceil((total+tail)*rate),u=new Uint8Array(44+n),dv=new DataView(u.buffer),t=0;
+ function S(o,s){for(var j=0;j<s.length;j++)u[o+j]=s.charCodeAt(j);}
+ S(0,"RIFF");dv.setUint32(4,36+n,true);S(8,"WAVEfmt ");dv.setUint32(16,16,true);dv.setUint16(20,1,true);dv.setUint16(22,1,true);
+ dv.setUint32(24,rate,true);dv.setUint32(28,rate,true);dv.setUint16(32,1,true);dv.setUint16(34,8,true);S(36,"data");dv.setUint32(40,n,true);
+ u.fill(128,44);
+ function put(at,f,d,vol){var s0=Math.floor(at*rate),len=Math.floor(d*rate),k,idx,e,x;
+  for(k=0;k<len;k++){idx=44+s0+k;if(idx>=u.length)break;e=(k<.02*rate?k/(.02*rate):1)*Math.exp(-4*k/len);x=u[idx]+Math.sin(2*Math.PI*f*k/rate)*vol*e*127;u[idx]=x<0?0:x>255?255:Math.round(x);}}
+ seq.forEach(function(p){if(!p.q)put(t,FREQ[p.k]||523,.35,.5);t+=p.s;});
+ if(chime){put(t,523,.5,.5);put(t+.18,659,.5,.5);put(t+.36,784,.9,.5);}
+ return new Blob([u],{type:"audio/wav"});
+}
+function preOK(T){if(!snd||!window.Audio||!window.Blob||!window.URL)return false;var t=sumT(T.make(R.mins));return !!T.loop||(t>0&&t<=5400);}
+function msSet(){try{if(!("mediaSession" in navigator))return;
+ navigator.mediaSession.metadata=new MediaMetadata({title:R.title,artist:"Altitude Breath",artwork:[{src:"icons/icon-512.png",sizes:"512x512",type:"image/png"}]});
+ navigator.mediaSession.setActionHandler("play",function(){if(R&&R.state==="pause")resume();});
+ navigator.mediaSession.setActionHandler("pause",function(){if(R&&R.state==="run")pause();});
+ navigator.mediaSession.setActionHandler("stop",closeT);}catch(e){}}
+function audioStart(){
+ if(!preOK(R.T))return;
+ var ph=R.phases,loop=!!R.T.loop,seq=ph,cyc=0,total=0,i,cycle;
+ if(loop){cycle=ph.slice(1);cycle.forEach(function(p){cyc+=p.s;});seq=[];for(i=0;i<Math.max(1,Math.ceil(60/cyc));i++)seq=seq.concat(cycle);}
+ seq.forEach(function(p){total+=p.s;});
+ try{
+  if(AURL)URL.revokeObjectURL(AURL);AURL=URL.createObjectURL(wavBlob(seq,total,!loop));
+  AUD=AUD||new Audio();AUD.src=AURL;AUD.loop=loop;AUD.muted=loop;
+  R.pre=true;R.cyc=cyc;R.t0=now();
+  var pr=AUD.play();if(pr&&pr.catch)pr.catch(function(){if(R)R.pre=false;});
+  msSet();
+ }catch(e){R.pre=false;}
+}
+function audioStop(){
+ try{if(AUD){AUD.pause();AUD.removeAttribute("src");AUD.load();}if(AURL){URL.revokeObjectURL(AURL);AURL=null;}
+  if("mediaSession" in navigator){navigator.mediaSession.metadata=null;["play","pause","stop"].forEach(function(a){navigator.mediaSession.setActionHandler(a,null);});}}catch(e){}
+}
+function syncAudio(){
+ if(!R||!R.pre||!AUD||R.state!=="run")return;
+ var pos=now()-R.t0;
+ if(R.T.loop){if(!R.go)return;pos=((pos%R.cyc)+R.cyc)%R.cyc;}else if(pos<0)return;
+ try{if(Math.abs(AUD.currentTime-pos)>.4)AUD.currentTime=pos;}catch(e){}
+}
+function say(t){var e=$("sr");if(!e)return;e.textContent="";setTimeout(function(){e.textContent=t;},30);}
+function announce(p){if(p.gr){say(p.n);return;}if(p.q)return;if((p.k==="in"||p.k==="out")&&snd)return;say(p.n+(p.sub?". "+p.sub:""));}
+function setInert(on){[].forEach.call(document.querySelectorAll("header.hero,nav,main,footer"),function(e){if(on)e.setAttribute("inert","");else e.removeAttribute("inert");});}
+function openT(id,title,desc,key,day){
+ var T=TM[id];if(!T)return;
+ R={opener:document.activeElement,T:T,tid:id,title:title,desc:desc,key:key,day:day,opts:T.opts?T.opts.map(function(m){return T.scale===0?m:r5(m*LVF());}):null,state:"prep",holds:[]};R.mins=T.optDef||(R.opts?R.opts[0]:0);
+ try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();}catch(e){}
+ var o=$("orb");o.style.transition="none";o.style.transform="scale(.55)";
+ ov.hidden=false;setInert(true);document.body.style.overflow="hidden";ui();$("tb1").focus();
+}
+function closeT(){var op=R&&R.opener,dy=R&&R.day;if(R){cancelAnimationFrame(R.raf);recHolds();if(R.tid==="bl_hold"&&R.holds.length&&$("blHold"))$("blHold").value=Math.round(R.holds[0]);}audioStop();wl(false);ov.hidden=true;setInert(false);document.body.style.overflow="";var had=R;R=null;if(had&&had.hs)renderProgress();if(op&&document.contains(op)&&op.focus)op.focus();else if(dy){var nb=document.querySelector("#s0 .go");if(nb)nb.focus();}}
+function sumT(ph){var t=0;for(var i=0;i<ph.length;i++){if(ph[i].s==null)return 0;t+=ph[i].s;}return t;}
+
+function ui(){
+ var T=R.T,s=R.state,p=R.phases&&R.phases[R.i],b1=$("tb1"),b2=$("tb2"),oo=$("oopts"),i;
+ $("nt").textContent="";$("ot").textContent=R.title;$("od").textContent=R.desc+(T.warn?tx(T.warn):"");
+ ov.classList.toggle("noorb",!(T.pace||T.orb));
+ oo.textContent="";
+ if(s==="prep"){
+  if(R.opts)R.opts.forEach(function(m){var b=document.createElement("button");b.type="button";b.textContent=T.optFmt?T.optFmt(m):tf("{0} min",m);b.className=m===R.mins?"on":"";b.dataset.m=m;oo.appendChild(b);});
+  var tot=T.loop?0:sumT(T.make(R.mins));
+  ov.dataset.k="rest";$("rp").textContent=tot?fmt(tot):tx("Ready");$("rn").textContent=tot?tx("total"):"";
+  $("rs").textContent=T.hint?tx(T.hint):tf("About {0} min. A 3-second lead-in starts first.",Math.round(tot/60));
+  $("arc").style.strokeDashoffset=CIRC;
+  b1.textContent=tx("Start");b2.hidden=true;if(preOK(T))$("nt").textContent=tx("Tip: you can lock your phone. The sound cues keep playing on most phones.");
+ }else if(s==="end"){
+  ov.dataset.k="go";$("rp").textContent=tx("Done");$("rn").textContent="";
+  var msg=R.holds.length?tx("Holds:")+" "+R.holds.map(function(h){return fmt(Math.round(h));}).join(" · "):"";
+  $("rs").textContent=(msg?msg+"\n":"")+(R.key?tx("Marked as done."):tx("Nice work."));$("rs").style.whiteSpace="pre-line";
+  b1.textContent=tx("Close");b2.hidden=true;
+ }else{
+  $("rs").style.whiteSpace="";ov.dataset.k=p.k;$("rn").textContent=p.n;
+  if(s==="pause"){b1.textContent=tx("Resume");b2.textContent=tx("Stop");b2.hidden=false;}
+  else if(p.k==="hold"){b1.textContent=p.s==null?(p.btn||tx("Next")):tx("Skip");b2.textContent=tx("End session");b2.hidden=false;}
+  else if(p.s==null){b1.textContent=p.btn||tx("Next");b2.textContent=tx("Pause");b2.hidden=false;}
+  else{b1.textContent=tx("Pause");if(R.T.loop){b2.textContent=tx("End session");b2.hidden=false;}else{b2.textContent=tx("Skip");b2.hidden=p.k!=="rest"||!!R.pre;}}
+  b2.className=(s==="run"&&p.k==="hold")?"stop":"";
+  if(s==="run")draw(now(),p);
+ }
+}
+function setOrb(p,rem){
+ var sc=p.o!=null?p.o:(p.k==="in"?1:p.k==="out"?.55:null);if(sc==null)return;
+ var br=p.k==="in"||p.k==="out",o=$("orb");
+ o.style.transition="transform "+(br&&rem?rem:1)+"s "+(br?"ease-in-out":"ease");o.style.transform="scale("+sc+")";
+}
+function begin(rem,silent){var p=R.phases[R.i];ov.dataset.k=p.k;setOrb(p,rem);if(!silent){cue(p);announce(p);}R.tk=0;}
+function start(){
+ R.phases=R.T.make(R.mins);R.phases.unshift({n:tx("Get ready"),gr:1,s:3,k:"rest",q:1,o:.55,sub:"",c:3});
+ R.tot=R.T.loop?0:sumT(R.phases);R.i=0;R.dT=0;R.st=now();R.state="run";R.lt=R.ls=null;
+ var o=$("orb");o.style.transition="none";o.style.transform="scale(.55)";void o.offsetWidth;
+ wl(true);audioStart();begin(R.phases[0].s,true);ui();R.raf=requestAnimationFrame(tick);
+}
+function draw(t,p){
+ var e=t-R.st,rem=p.s!=null?p.s-e:0,txt;
+ if(p.s==null)txt=fmt(Math.floor(e));
+ else if(p.c!=null&&!p.gr)txt=String(p.c);
+ else if(R.T.pace||p.gr)txt=String(Math.max(1,Math.ceil(rem)));
+ else txt=fmt(rem);
+ if(txt!==R.lt){$("rp").textContent=txt;R.lt=txt;}
+ var prog=R.tot?(R.dT+e)/R.tot:(p.s!=null?e/p.s:1);
+ $("arc").style.strokeDashoffset=CIRC*(1-Math.min(1,Math.max(0,prog)));
+ var sub=p.sub||"";if(R.tot&&!p.gr)sub+=(sub?" · ":"")+tf("{0} left",fmt(R.tot-R.dT-e));
+ if(sub!==R.ls){$("rs").textContent=sub;R.ls=sub;}
+ if(p.k==="rest"&&p.s>4&&rem<=3){var c=Math.ceil(rem);if(c!==R.tk&&c>0){R.tk=c;tone(880,.09,.12);}}
+}
+function tick(){
+ if(!R||R.state!=="run")return;
+ var t=now(),p=R.phases[R.i],ch=false;
+ while(p.s!=null&&t>=R.st+p.s){R.st+=p.s;R.dT+=p.s;R.i++;if(R.i>=R.phases.length){if(R.T.loop)R.i=1;else{finish();return;}}p=R.phases[R.i];ch=true;}
+ if(ch){ui();begin(p.s!=null?Math.max(.1,R.st+p.s-t):null);}
+ if(R.pre&&R.T.loop&&!R.go&&R.i>=1){R.go=1;R.t0=R.st;if(AUD){try{AUD.currentTime=Math.max(0,t-R.st)%R.cyc;}catch(e){}AUD.muted=!snd;}}
+ draw(t,p);R.raf=requestAnimationFrame(tick);
+}
+function next(){ /* end an open-ended phase */
+ var t=now(),p=R.phases[R.i];if(p.hold)R.holds.push(t-R.st);
+ R.i++;R.st=t;if(R.i>=R.phases.length){finish();return;}
+ R.lt=R.ls=null;ui();begin(R.phases[R.i].s);
+}
+function skip(){var t=now(),p=R.phases[R.i];R.tot-=Math.max(0,p.s-(t-R.st));R.i++;R.st=t;R.lt=R.ls=null;ui();begin(R.phases[R.i].s);}
+function pause(){
+ R.pa=now();cancelAnimationFrame(R.raf);R.state="pause";if(R.pre&&AUD)AUD.pause();say(tx("Pause"));
+ var o=$("orb"),tr=getComputedStyle(o).transform;o.style.transition="none";o.style.transform=tr;wl(false);ui();
+}
+function resume(){
+ var t=now(),p;R.st+=t-R.pa;if(R.t0!=null)R.t0+=t-R.pa;R.state="run";p=R.phases[R.i];
+ begin(p.s!=null?Math.max(.1,R.st+p.s-t):null,true);wl(true);ui();R.raf=requestAnimationFrame(tick);if(R.pre&&AUD){syncAudio();var pr=AUD.play();if(pr&&pr.catch)pr.catch(function(){});}
+}
+function finish(){
+ cancelAnimationFrame(R.raf);R.state="end";wl(false);
+ if(R.key){store[R.key]=true;save();var tr=document.querySelector('tr[data-k="'+R.key+'"]');if(tr){tr.classList.add("done");tr.querySelector("input").checked=true;}badges();}
+ recHolds();
+ var dk=R.day||(R.key?todayStr()+"|"+R.key:null);if(dk){log[dk]=1;saveLog();renderToday();}renderProgress();
+ chime();say(tx("Done"));ui();$("arc").style.strokeDashoffset=0;setOrb({k:"go",o:.8},1);
+}
+function act(w){
+ var s=R.state,p=R.phases&&R.phases[R.i];
+ if(s==="prep")start();
+ else if(s==="end")closeT();
+ else if(s==="pause"){if(w===1)resume();else closeT();}
+ else if(p.k==="hold"){if(w===2)closeT();else if(p.s==null)next();else skip();}
+ else if(p.s==null){if(w===1)next();else pause();}
+ else{if(w===1)pause();else if(R.T.loop)closeT();else skip();}
+}
+$("tb1").addEventListener("click",function(){if(R)act(1);});
+$("tb2").addEventListener("click",function(){if(R)act(2);});
+$("ovx").addEventListener("click",closeT);
+$("snd").addEventListener("click",function(){snd=!snd;try{localStorage.setItem("ab_snd",snd?"1":"0");}catch(e){}paintSnd();if(R&&R.pre&&AUD)AUD.muted=!snd||(R.T.loop&&!R.go);if(R&&R.state==="prep")ui();if(snd)tone(523,.2);});
+$("oopts").addEventListener("click",function(e){var b=e.target.closest("button");if(b&&R&&R.state==="prep"){R.mins=+b.dataset.m;ui();}});
+document.addEventListener("keydown",function(e){
+ if(!R)return;
+ if(e.key==="Tab"){var f=[].filter.call(ov.querySelectorAll("button"),function(b){return !b.hidden&&b.offsetParent!==null;});
+  if(f.length){var a=document.activeElement,fi=f[0],la=f[f.length-1];
+   if(e.shiftKey&&(a===fi||!ov.contains(a))){e.preventDefault();la.focus();}
+   else if(!e.shiftKey&&(a===la||!ov.contains(a))){e.preventDefault();fi.focus();}}
+  return;}
+ if(e.key==="Escape")closeT();
+ else if(e.code==="Space"&&e.target.tagName!=="BUTTON"){e.preventDefault();if(R.state==="run"){var cp=R.phases[R.i];if(!(cp&&cp.k==="hold"))pause();}else if(R.state==="pause")resume();else if(R.state==="prep")start();}
+});
+if("serviceWorker" in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register("sw.js").catch(function(){});}
+</script>
+</body>
+</html>
